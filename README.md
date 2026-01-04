@@ -39,3 +39,18 @@
 ## Tested
 - GPU: GeForce RTX 3070 Laptop
 - Driver: 550.144.03 (NVIDIA)
+
+GLIBC_2.38 installation:
+
+```bash
+apt update && \
+  echo "deb http://archive.ubuntu.com/ubuntu noble main" >> /etc/apt/sources.list && \
+  apt update && \
+  apt install unzip g++ gcc g++-13 -y && \
+  apt install libc6 -y && \
+  sed -i '/deb http:\/\/archive.ubuntu.com\/ubuntu noble main/d' /etc/apt/sources.list && \
+  apt update
+```
+<img width="1837" height="371" alt="image" src="https://github.com/user-attachments/assets/38f01246-ae1b-4e0b-8517-4aa42f4283dd" />
+
+
