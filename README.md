@@ -29,9 +29,6 @@
 ```
 </details>
 
-## Screenshots
-Use HTML image tags for sizing and alignment.
-
 <p align="center">
   <img width="1280" height="202" alt="Hive OS FS JSON example" src="https://github.com/user-attachments/assets/dc3fbe94-2850-4fd0-b09c-cdb5e84fc3ef" />
 </p>
