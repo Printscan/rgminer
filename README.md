@@ -30,7 +30,7 @@
 </details>
 
 <p align="center">
-  <img width="1280" height="202" alt="Hive OS FS JSON example" src="https://github.com/user-attachments/assets/dc3fbe94-2850-4fd0-b09c-cdb5e84fc3ef" />
+  <img width="1342" height="225" alt="image" src="https://github.com/user-attachments/assets/48c55caf-4840-4e96-9697-1387b91f0b0c" />
 </p>
 <p align="center">
   <img width="1383" height="161" alt="rgminer running in Hive OS" src="https://github.com/user-attachments/assets/1abbf242-7388-49c6-b89d-ceeef769f3e3" />
