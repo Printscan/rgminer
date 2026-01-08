@@ -16,11 +16,11 @@
       "miner": "custom",
       "miner_alt": "rgminer",
       "miner_config": {
-        "url": "http://147.45.108.5:59006/",
+        "url": "http://147.45.108.5:59007/",
         "algo": "memehash",
         "miner": "rgminer",
         "template": "%WAL%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/rgminer/rgminer-0.4.0.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/rgminer/rgminer-0.5.5.tar.gz"
       },
       "pool_geo": []
     }
