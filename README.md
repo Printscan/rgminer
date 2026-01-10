@@ -4,7 +4,7 @@
 <summary>Hive OS FS JSON (vecno)</summary>
 
 ```json
-{
+[{
   "name": "vecno",
   "isFavorite": false,
   "items": [
@@ -20,12 +20,12 @@
         "algo": "memehash",
         "miner": "rgminer",
         "template": "%WAL%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/rgminer/rgminer-0.5.7.tar.gz"
+        "install_url": "[https://github.com/Printscan/rgminer/releases/download/rgminer/rgminer-0.5.7.tar.gz](https://github.com/Printscan/rgminer/releases/download/v0.5.7/rgminer-0.5.7.tar.gz)"
       },
       "pool_geo": []
     }
   ]
-}
+}]
 ```
 </details>
 
