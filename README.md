@@ -20,7 +20,7 @@
         "algo": "memehash",
         "miner": "rgminer",
         "template": "%WAL%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/rgminer/rgminer-0.5.5.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/rgminer/rgminer-0.5.7.tar.gz"
       },
       "pool_geo": []
     }
