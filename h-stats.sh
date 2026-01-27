@@ -162,7 +162,7 @@ if [[ -n $api_json ]]; then
     if [[ $dev_id =~ ^[0-9]+$ && $rate =~ ^-?[0-9]+(\.[0-9]+)?([eE][+-]?[0-9]+)?$ ]]; then
       hs_map["$dev_id"]="$rate"
     fi
-  done < <(echo "$api_json" | jq -r '.miners[] | "\(.deviceId)\t\(.lastRate)"' 2>/dev/null || true)
+  done < <(echo "$api_json" | jq -r '.miners[] | "\(.deviceId)\t\(.emaRate)"' 2>/dev/null || true)
 
   if ((${#hs_map[@]})); then
     while IFS= read -r id; do

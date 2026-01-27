@@ -244,18 +244,6 @@ set_config_value() {
       DEVICES="$value"
       return 0
       ;;
-    grid|grid_size)
-      GRID="$value"
-      return 0
-      ;;
-    block|block_size)
-      BLOCK="$value"
-      return 0
-      ;;
-    slice|nonce_slice|nonce)
-      SLICE="$value"
-      return 0
-      ;;
     algo|algorithm|custom_algo)
       ALGO="$value"
       return 0
@@ -330,9 +318,6 @@ PORT="5555"
 API_HOST="127.0.0.1"
 API_PORT="${CUSTOM_API_PORT:-9100}"
 DEVICES=""
-GRID=""
-BLOCK=""
-SLICE=""
 ALGO="${CUSTOM_ALGO:-}"
 EXTRA_ARGS_TOKENS=()
 EXTRA_PROGRAMS_LIST=()
@@ -505,51 +490,6 @@ if [[ -n "${CUSTOM_USER_CONFIG:-}" ]]; then
             warn "$trimmed requires a value"
           fi
           ;;
-        --grid)
-          handled=true
-          _consumed[$i]=1
-          if (( i + 1 < token_count )); then
-            value=$(strip_quotes "$(trim_whitespace "${_tokens[$((i + 1))]}")")
-            _consumed[$((i + 1))]=1
-            if [[ -n "$value" ]]; then
-              set_config_value "grid" "$value" || true
-            else
-              warn "$trimmed requires a value"
-            fi
-          else
-            warn "$trimmed requires a value"
-          fi
-          ;;
-        --block)
-          handled=true
-          _consumed[$i]=1
-          if (( i + 1 < token_count )); then
-            value=$(strip_quotes "$(trim_whitespace "${_tokens[$((i + 1))]}")")
-            _consumed[$((i + 1))]=1
-            if [[ -n "$value" ]]; then
-              set_config_value "block" "$value" || true
-            else
-              warn "$trimmed requires a value"
-            fi
-          else
-            warn "$trimmed requires a value"
-          fi
-          ;;
-        --slice)
-          handled=true
-          _consumed[$i]=1
-          if (( i + 1 < token_count )); then
-            value=$(strip_quotes "$(trim_whitespace "${_tokens[$((i + 1))]}")")
-            _consumed[$((i + 1))]=1
-            if [[ -n "$value" ]]; then
-              set_config_value "slice" "$value" || true
-            else
-              warn "$trimmed requires a value"
-            fi
-          else
-            warn "$trimmed requires a value"
-          fi
-          ;;
         --algo|--algorithm)
           handled=true
           _consumed[$i]=1
@@ -648,9 +588,6 @@ if [[ -z "$API_PORT" || ! $API_PORT =~ ^[0-9]+$ ]]; then
 fi
 
 DEVICES=$(strip_quotes "$(trim_whitespace "$DEVICES")")
-GRID=$(strip_quotes "$(trim_whitespace "$GRID")")
-BLOCK=$(strip_quotes "$(trim_whitespace "$BLOCK")")
-SLICE=$(strip_quotes "$(trim_whitespace "$SLICE")")
 ALGO=$(strip_quotes "$(trim_whitespace "$ALGO")")
 
 mkdir -p "$(dirname "$CONFIG_FILE")"
@@ -667,9 +604,6 @@ mkdir -p "$(dirname "$CONFIG_FILE")"
   printf 'API_HOST=%q\n' "$API_HOST"
   printf 'API_PORT=%q\n' "$API_PORT"
   printf 'DEVICES=%q\n' "$DEVICES"
-  printf 'GRID=%q\n' "$GRID"
-  printf 'BLOCK=%q\n' "$BLOCK"
-  printf 'SLICE=%q\n' "$SLICE"
   printf 'ALGO=%q\n' "$ALGO"
   if ((${#EXTRA_ARGS_TOKENS[@]})); then
     printf 'EXTRA_ARGS=%q\n' "$(printf '%s\n' "${EXTRA_ARGS_TOKENS[@]}")"

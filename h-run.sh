@@ -2,10 +2,6 @@
 set -euo pipefail
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-cd "$SCRIPT_DIR" || {
-  echo "ERROR: unable to access script dir: $SCRIPT_DIR" >&2
-  exit 1
-}
 source "$SCRIPT_DIR/h-manifest.conf"
 
 BIN_PATH="$SCRIPT_DIR/rgminer"
@@ -13,6 +9,10 @@ CONFIG_FILE="$CUSTOM_CONFIG_FILENAME"
 LOG_DIR=$(dirname "$CUSTOM_LOG_BASENAME")
 LOG_FILE="${CUSTOM_LOG_BASENAME}.log"
 LAUNCH_CACHE_FILE="$SCRIPT_DIR/launch_cache.txt"
+
+reset_launch_cache() {
+  : > "$LAUNCH_CACHE_FILE"
+}
 
 mkdir -p "$LOG_DIR"
 : > "$LOG_FILE"
@@ -23,8 +23,6 @@ mkdir -p "$LOG_DIR"
   exit 1
 }
 
-: > "$LAUNCH_CACHE_FILE"
-
 source "$CONFIG_FILE"
 
 address="${ADDRESS:-}"
@@ -34,9 +32,6 @@ coordinators_raw="${COORDINATORS:-}"
 api_host="${API_HOST:-127.0.0.1}"
 api_port="${API_PORT:-$CUSTOM_API_PORT}"
 devices_raw="${DEVICES:-}"
-grid_value="${GRID:-}"
-block_value="${BLOCK:-}"
-slice_value="${SLICE:-}"
 extra_args_raw="${EXTRA_ARGS:-}"
 
 trim_token() {
@@ -57,6 +52,71 @@ strip_surrounding_quotes() {
     fi
   fi
   printf '%s' "$value"
+}
+
+version_lt() {
+  local a="$1"
+  local b="$2"
+  [[ -z "$a" || -z "$b" || "$a" == "$b" ]] && return 1
+  local first
+  first=$(printf '%s\n%s\n' "$a" "$b" | sort -V | head -n1)
+  [[ "$first" == "$a" ]]
+}
+
+resolve_libc_path() {
+  local -a candidates=(
+    "/lib/x86_64-linux-gnu/libc.so.6"
+    "/lib64/libc.so.6"
+    "/lib/libc.so.6"
+  )
+  local candidate
+  for candidate in "${candidates[@]}"; do
+    if [[ -r "$candidate" ]]; then
+      printf '%s' "$candidate"
+      return 0
+    fi
+  done
+  return 1
+}
+
+get_glibc_version() {
+  local version=""
+  if command -v getconf >/dev/null 2>&1; then
+    version=$(getconf GNU_LIBC_VERSION 2>/dev/null | awk '{print $2}')
+  fi
+  if [[ -z "$version" ]] && command -v ldd >/dev/null 2>&1; then
+    version=$(ldd --version 2>/dev/null | head -n1 | awk '{print $NF}')
+  fi
+  if [[ -z "$version" ]]; then
+    local libc_path
+    libc_path=$(resolve_libc_path || true)
+    if [[ -n "$libc_path" && -x "$libc_path" ]]; then
+      version=$("$libc_path" 2>/dev/null | head -n1 | awk '{print $NF}')
+    fi
+  fi
+  version=$(trim_token "$version")
+  if [[ -n "$version" && ! $version =~ ^[0-9]+([.][0-9]+)+$ ]]; then
+    version=""
+  fi
+  printf '%s' "$version"
+}
+
+glibc_has_version_symbol() {
+  local target="$1"
+  local libc_path
+  libc_path=$(resolve_libc_path || true)
+  [[ -z "$libc_path" ]] && return 1
+  if command -v strings >/dev/null 2>&1; then
+    if strings -a "$libc_path" 2>/dev/null | grep -q "GLIBC_${target}"; then
+      return 0
+    fi
+  fi
+  if command -v readelf >/dev/null 2>&1; then
+    if readelf -V "$libc_path" 2>/dev/null | grep -q "GLIBC_${target}"; then
+      return 0
+    fi
+  fi
+  return 1
 }
 
 normalize_algo_value() {
@@ -159,16 +219,6 @@ if [[ -n "$clean_devices" ]]; then
   cmd+=("--devices" "$clean_devices")
 fi
 
-if [[ -n "$grid_value" ]]; then
-  cmd+=("--grid" "$grid_value")
-fi
-if [[ -n "$block_value" ]]; then
-  cmd+=("--block" "$block_value")
-fi
-if [[ -n "$slice_value" ]]; then
-  cmd+=("--slice" "$slice_value")
-fi
-
 if [[ -n "$api_host" ]]; then
   cmd+=("--api-host" "$api_host")
 fi
@@ -183,6 +233,50 @@ log_info() {
 log_warn() {
   echo "[rgminer] WARNING: $*" | tee -a "$LOG_FILE"
 }
+
+ensure_glibc_238() {
+  local target="2.38"
+  local current
+  current=$(get_glibc_version)
+  if [[ -n "$current" ]]; then
+    if ! version_lt "$current" "$target"; then
+      log_info "glibc $current >= $target; no update needed."
+      return 0
+    fi
+  else
+    if glibc_has_version_symbol "$target"; then
+      log_info "glibc provides GLIBC_$target; no update needed."
+      return 0
+    fi
+    log_warn "Unable to detect glibc version; attempting update."
+  fi
+
+  local -a sudo_cmd=()
+  if [[ ${EUID:-0} -ne 0 ]]; then
+    if command -v sudo >/dev/null 2>&1; then
+      sudo_cmd=(sudo)
+    else
+      log_warn "glibc update requires root privileges; sudo not found."
+      return 0
+    fi
+  fi
+
+  local repo_file="/etc/apt/sources.list.d/rgminer-noble.list"
+  local update_status=0
+  log_info "glibc ${current:-unknown} < $target; updating packages..."
+  {
+    printf 'deb http://archive.ubuntu.com/ubuntu noble main\n' | "${sudo_cmd[@]}" tee "$repo_file" >/dev/null
+    "${sudo_cmd[@]}" env DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a apt-get -o DPkg::Lock::Timeout=600 update
+    "${sudo_cmd[@]}" env DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a apt-get -o DPkg::Lock::Timeout=600 install -y --no-install-recommends unzip g++ gcc g++-13 libc6
+  } || update_status=$?
+  "${sudo_cmd[@]}" rm -f "$repo_file" >/dev/null 2>&1 || true
+  "${sudo_cmd[@]}" env DEBIAN_FRONTEND=noninteractive NEEDRESTART_MODE=a apt-get -o DPkg::Lock::Timeout=600 update >/dev/null 2>&1 || true
+  if ((update_status != 0)); then
+    log_warn "glibc update failed with status $update_status."
+  fi
+}
+
+ensure_glibc_238
 
 format_cmd_for_script() {
   local -a argv=("$@")
@@ -205,6 +299,12 @@ resolve_term_value() {
 resolve_tty_size() {
   local cols="${RGMINER_TTY_COLUMNS:-}"
   local rows="${RGMINER_TTY_LINES:-}"
+  if [[ -z "$cols" && ${COLUMNS:-} =~ ^[0-9]+$ ]]; then
+    cols="$COLUMNS"
+  fi
+  if [[ -z "$rows" && ${LINES:-} =~ ^[0-9]+$ ]]; then
+    rows="$LINES"
+  fi
   if [[ -z "$cols" || -z "$rows" ]]; then
     local stty_size
     stty_size=$(stty size 2>/dev/null || true)
@@ -214,7 +314,7 @@ resolve_tty_size() {
     fi
   fi
   if [[ -z "$cols" || ! $cols =~ ^[0-9]+$ ]]; then
-    cols=80
+    cols=180
   fi
   if [[ -z "$rows" || ! $rows =~ ^[0-9]+$ ]]; then
     rows=24
@@ -517,8 +617,12 @@ run_miner() {
   local term_value
   local tty_cols
   local tty_rows
+  reset_launch_cache
   term_value=$(resolve_term_value)
-  read -r tty_cols tty_rows < <(resolve_tty_size)
+  if ! read -r tty_cols tty_rows < <(resolve_tty_size); then
+    tty_cols=80
+    tty_rows=24
+  fi
   if command -v script >/dev/null 2>&1; then
     local cmd_string
     local term_escaped
