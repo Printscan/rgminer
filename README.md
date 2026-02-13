@@ -40,6 +40,9 @@
 - GPU: GeForce RTX 3070 Laptop
 - Driver: 550.144.03 (NVIDIA)
 
-<img width="1837" height="371" alt="image" src="https://github.com/user-attachments/assets/38f01246-ae1b-4e0b-8517-4aa42f4283dd" />
+3070m: 35.6+ Mh 
+2080: 33+ Mh
+4070ti: 70+ Mh
+4090: 190+ Mh
 
 
