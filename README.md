@@ -37,9 +37,7 @@
 </p>
 
 ## Tested
-- GPU: GeForce RTX 3070 Laptop
 - Driver: 550.144.03 (NVIDIA)
-
 - 3070m: 35.6+ Mh 
 - 2080: 33+ Mh
 - 4070ti: 70+ Mh
