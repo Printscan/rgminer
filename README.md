@@ -30,27 +30,16 @@
 </details>
 
 <p align="center">
-  <img width="1342" height="225" alt="image" src="https://github.com/user-attachments/assets/48c55caf-4840-4e96-9697-1387b91f0b0c" />
+  <img width="1762" height="247" alt="image" src="https://github.com/user-attachments/assets/8bfe8164-e975-4277-9058-999fcc1d3d46" />
 </p>
 <p align="center">
-  <img width="1383" height="161" alt="rgminer running in Hive OS" src="https://github.com/user-attachments/assets/1abbf242-7388-49c6-b89d-ceeef769f3e3" />
+<img width="1811" height="84" alt="image" src="https://github.com/user-attachments/assets/7a719946-12fb-4a0e-8e2c-09c8752134d3" />
 </p>
 
 ## Tested
 - GPU: GeForce RTX 3070 Laptop
 - Driver: 550.144.03 (NVIDIA)
 
-GLIBC_2.38 installation:
-
-```bash
-apt update && \
-  echo "deb http://archive.ubuntu.com/ubuntu noble main" >> /etc/apt/sources.list && \
-  apt update && \
-  apt install unzip g++ gcc g++-13 -y && \
-  apt install libc6 -y && \
-  sed -i '/deb http:\/\/archive.ubuntu.com\/ubuntu noble main/d' /etc/apt/sources.list && \
-  apt update
-```
 <img width="1837" height="371" alt="image" src="https://github.com/user-attachments/assets/38f01246-ae1b-4e0b-8517-4aa42f4283dd" />
 
 
