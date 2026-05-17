@@ -6,12 +6,11 @@ Current release: `v0.8.0`
 
 ## Supported Algorithms
 
-| Algo | Coin / pool mode | Main command |
-|---|---|---|
-| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
-| `exfer-argon2id` | EXFER / Argon2id stratum pools | `--algo exfer-argon2id --stratum HOST:PORT --wallet WALLET` |
-| `memhash` | Vecno / MemHash coordinator or stratum-compatible mode | `--algo memhash --host HOST --port PORT --wallet WALLET` |
-| `blake2b` | Blake2b offline/network mode | `--algo blake2b ...` |
+| Algo | Coin / pool mode | Dev fee | Main command |
+|---|---|---:|---|
+| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | 15% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
+| `exfer-argon2id` | EXFER / Argon2id stratum pools | 5% | `--algo exfer-argon2id --stratum HOST:PORT --wallet WALLET` |
+| `memhash` | Vecno / MemHash coordinator or stratum-compatible mode | 0% | `--algo memhash --host HOST --port PORT --wallet WALLET` |
 
 List algorithms supported by the binary:
 
