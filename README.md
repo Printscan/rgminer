@@ -153,7 +153,7 @@ https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.
       "miner_config": {
         "url": "pool.akoyapool.com:3333",
         "miner": "rgminer",
-        "template": "%WAL%.%WORKER_NAME%",
+        "template": "%WAL%",
         "install_url": "https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.gz",
         "user_config": "--algo pearl"
       },
