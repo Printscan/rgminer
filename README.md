@@ -2,7 +2,7 @@
 
 CUDA miner with HiveOS custom miner integration.
 
-Current release: `v0.9.0`
+Current release: `v0.9.1`
 
 ## Supported Algorithms
 
