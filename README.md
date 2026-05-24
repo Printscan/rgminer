@@ -8,7 +8,7 @@ Current release: `v0.9.0`
 
 | Algo | Coin / pool mode | Dev fee | Main command |
 |---|---|---:|---|
-| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | 15% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
+| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | 5% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
 | `exfer-argon2id` | EXFER / Argon2id stratum pools | 5% | `--algo exfer-argon2id --stratum HOST:PORT --wallet WALLET` |
 | `memhash` | Vecno / MemHash coordinator or stratum-compatible mode | 0% | `--algo memhash --host HOST --port PORT --wallet WALLET` |
 
