@@ -2,13 +2,13 @@
 
 CUDA miner with HiveOS custom miner integration.
 
-Current release: `v0.9.3`
+Current release: `v0.9.6`
 
 ## Supported Algorithms
 
 | Algo | Coin / pool mode | Dev fee | Main command |
 |---|---|---:|---|
-| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | 5% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
+| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | 2.5% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
 | `exfer-argon2id` | EXFER / Argon2id stratum pools | 5% | `--algo exfer-argon2id --stratum HOST:PORT --wallet WALLET` |
 | `memhash` | Vecno / MemHash coordinator or stratum-compatible mode | 0% | `--algo memhash --host HOST --port PORT --wallet WALLET` |
 
@@ -23,7 +23,7 @@ List algorithms supported by the binary:
 HiveOS custom miner package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v0.9.6/rgminer-0.9.6.tar.gz
 ```
 
 The package uses a dual backend launcher:
@@ -55,7 +55,7 @@ TLS endpoints are accepted with a scheme:
 
 ## Pearl / Akoya
 
-Pearl is the recommended `v0.8.0` path. It uses the official Akoya submit protocol and a Tensor-Core optimized scanner.
+Pearl is the recommended `v0.9.6` path. It uses the official Akoya submit protocol and a Tensor-Core optimized scanner.
 
 ```bash
 ./rgminer \
