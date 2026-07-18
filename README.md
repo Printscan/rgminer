@@ -1,16 +1,16 @@
 # rgminer
 
-CUDA miner with HiveOS custom miner integration.
+CUDA miner with HiveOS and MMPOS integration.
 
-Current release: `v0.9.6`
+Current release: `v0.9.9`
 
 ## Supported Algorithms
 
 | Algo | Coin / pool mode | Dev fee | Main command |
 |---|---|---:|---|
-| `pearl` | Pearl on Akoya Pool and Pearl candidate pools | 2.5% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
-| `exfer-argon2id` | EXFER / Argon2id stratum pools | 5% | `--algo exfer-argon2id --stratum HOST:PORT --wallet WALLET` |
-| `memhash` | Vecno / MemHash coordinator or stratum-compatible mode | 0% | `--algo memhash --host HOST --port PORT --wallet WALLET` |
+| `pearl` | Pearl Stratum pools | 2% | `--algo pearl --stratum HOST:PORT --wallet WALLET` |
+| `exfer-argon2id` | EXFER / Argon2id Stratum pools | 5% | `--algo exfer-argon2id --stratum HOST:PORT --wallet WALLET` |
+| `memhash` | Vecno / MemHash Stratum pools | 0% | `--algo memhash --stratum HOST:PORT --wallet WALLET` |
 
 List algorithms supported by the binary:
 
@@ -23,17 +23,29 @@ List algorithms supported by the binary:
 HiveOS custom miner package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.9.6/rgminer-0.9.6.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.gz
 ```
 
-The package uses a dual backend launcher:
+MMPOS package:
 
-- CUDA 12 backend for current HiveOS / NVIDIA 550 driver deployments.
-- CUDA 13 backend for newer systems.
+```text
+https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9-mmpos.tar.gz
+```
+
+Standalone launcher:
+
+```text
+https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9
+```
+
+The release package selects the backend for the detected GPU architecture:
+
+- CUDA 12.4 for Turing, Ampere and Ada GPUs.
+- CUDA 12.8 for Blackwell GPUs.
 
 ## Common Pool Format
 
-For pool-based coins, prefer the common format:
+For pool-based coins, use:
 
 ```bash
 ./rgminer --algo COIN --stratum HOST:PORT --wallet WALLET --worker-name WORKER
@@ -52,35 +64,27 @@ TLS endpoints are accepted with a scheme:
 ```
 
 `--wallet` is the preferred option. `--address` is accepted as a legacy alias.
+`--worker` and `--worker-name` are equivalent.
 
-## Pearl / Akoya
-
-Pearl is the recommended `v0.9.6` path. It uses the official Akoya submit protocol and a Tensor-Core optimized scanner.
+## Pearl
 
 ```bash
 ./rgminer \
   --algo pearl \
-  --stratum pool.akoyapool.com:3333 \
-  --wallet <your PRL wallet> \
-  --worker-name <worker>
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --worker-name WORKER \
+  --proto akoyav2
 ```
 
-Pearl overlap lanes are enabled by default. Manual override:
+Pearl options available in the release:
 
-```bash
-RGM_PEARL_GPU_LANES=1 ./rgminer --algo pearl --stratum pool.akoyapool.com:3333 --wallet <wallet>
-RGM_PEARL_GPU_LANES=2 ./rgminer --algo pearl --stratum pool.akoyapool.com:3333 --wallet <wallet>
-```
-
-Useful Pearl options:
-
-```bash
---pearl-protocol auto|akoya|candidate
---pearl-tuner auto|cache|fixed
---pearl-kernel split128|group8|group4|group2|group1|m64|m256|seq256|chunksh|owner2|split64|split32|split16|shared256
---pearl-batch N
---pearl-retune
---pearl-batch-log=on
+```text
+--proto akoyav2|alphapool|herominers|kryptex|f2pool|pearlfortune
+--pearl-protocol PROTOCOL
+--pearl-share-diff N|off
+--pearl-kernel turing|ampere|ada|blackwell
+--pearl-reconnect-max-ms MS
 ```
 
 ## EXFER / Argon2id
@@ -91,53 +95,29 @@ LuckyPool example:
 ./rgminer \
   --algo exfer-argon2id \
   --stratum stratum+tls://exfer.luckypool.io:3336 \
-  --wallet solo:<wallet> \
-  --worker-name <worker>
-```
-
-EXFER tuning options:
-
-```bash
---exfer-autotune-on-start
---exfer-lanes N
---exfer-threads-per-lane 32|64|128|256|512
---exfer-fill-mode coop|warpstore
---exfer-tune-fill-mode
---exfer-continuous-window-ms N
+  --wallet solo:WALLET \
+  --worker-name WORKER
 ```
 
 ## Vecno / MemHash
 
-Coordinator/network example:
-
 ```bash
 ./rgminer \
   --algo memhash \
-  --host <coordinator-host> \
-  --port <coordinator-port> \
-  --wallet <wallet> \
-  --worker-name <worker>
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --worker-name WORKER
 ```
 
-MemHash split options:
-
-```bash
---split-tune
---pipelines N
---pipelines-map "0=2,1=4"
---split-tuner auto|bench|score|cache|fixed
---split-block N
---split-mix 0|1
-```
 ## HiveOS Custom Miner
 
 Use this install URL:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.gz
 ```
 
-### Pearl / Akoya HiveOS JSON
+### Pearl HiveOS JSON
 
 ```json
 {
@@ -151,11 +131,11 @@ https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.
       "miner": "custom",
       "miner_alt": "rgminer",
       "miner_config": {
-        "url": "pool.akoyapool.com:3333",
+        "url": "HOST:PORT",
         "miner": "rgminer",
         "template": "%WAL%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.gz",
-        "user_config": "--algo pearl"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.gz",
+        "user_config": "--algo pearl --proto akoyav2"
       },
       "pool_geo": []
     }
@@ -163,34 +143,62 @@ https://github.com/Printscan/rgminer/releases/download/v0.8.0/rgminer-0.8.0.tar.
 }
 ```
 
-### HiveOS Algo Selection Rule
+## GPU Selection and Clock Control
 
-The miner launch algorithm is selected by `--algo` if it is present in Extra config arguments.
-
-The HiveOS flight sheet `Hash algorithm` value is kept for stats display. This allows using a custom display coin while launching the actual miner with:
+Select CUDA devices:
 
 ```text
---algo pearl
+-d GPU[,GPU]
+--devices GPU[,GPU]
 ```
+
+Clock options accept multiple physical NVIDIA GPU indices in the format
+`GPU_INDEX:VALUE,GPU_INDEX:VALUE`:
+
+```text
+--cclock GPU:OFFSET       Core clock offset in MHz
+--mclock GPU:OFFSET       Memory clock offset in MHz
+--lock-cclock GPU:MHz     Fixed core clock
+--lock-mclock GPU:MHz     Fixed memory clock
+```
+
+Multi-GPU example:
+
+```bash
+./rgminer \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --cclock 0:125,1:250 \
+  --mclock 0:500,1:1000 \
+  --lock-cclock 0:1650,1:2450 \
+  --lock-mclock 0:7000,1:7000
+```
+
+Clock settings are applied directly through NVML and require sufficient NVIDIA
+driver permissions.
 
 ## General GPU / Safety Options
 
-```bash
---watchdog=on|off
---no-watchdog
+```text
+--watchdog=off|restart|reboot
 --low-cpu=on|off
 --low-cpu-wait-ms N
---tune-cache-file <path>
+--api-host HOST
+--api-port PORT
+--plain-console
 ```
+
+The default watchdog policy is `restart`.
 
 Low CPU mode example:
 
 ```bash
-./rgminer --algo pearl --stratum pool.akoyapool.com:3333 --wallet <wallet> --low-cpu=on --low-cpu-wait-ms 2
+./rgminer --algo pearl --stratum HOST:PORT --wallet WALLET --low-cpu=on --low-cpu-wait-ms 2
 ```
 
 ## Tested
 
-- NVIDIA driver: `550.144.03`
-- CUDA runtime: CUDA 12 backend on HiveOS NVIDIA 550 deployments
-- Pearl / Akoya: RTX 3070 Laptop GPU, multi-GPU mode
+- HiveOS CUDA 12 path with NVIDIA driver `550.144.03`.
+- CUDA 12.4 backends for Turing, Ampere and Ada.
+- CUDA 12.8 backend for Blackwell.
