@@ -2,7 +2,7 @@
 
 CUDA miner with HiveOS and MMPOS integration.
 
-Current release: `v0.9.9`
+Current release: `v1.0.0`
 
 ## Supported Algorithms
 
