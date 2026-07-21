@@ -151,8 +151,8 @@ https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.
         "url": "HOST:PORT",
         "miner": "rgminer",
         "template": "%WAL%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.gz",
-        "user_config": "--algo pearl --proto akoyav2"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0.tar.gz",
+        "user_config": "--algo pearl
       },
       "pool_geo": []
     }
@@ -192,9 +192,6 @@ Multi-GPU example:
   --lock-mclock 0:7000,1:7000
 ```
 
-Clock settings are applied directly through NVML and require sufficient NVIDIA
-driver permissions.
-
 ## General GPU / Safety Options
 
 ```text
@@ -213,9 +210,3 @@ Low CPU mode example:
 ```bash
 ./rgminer --algo pearl --stratum HOST:PORT --wallet WALLET --low-cpu=on --low-cpu-wait-ms 2
 ```
-
-## Tested
-
-- HiveOS CUDA 12 path with NVIDIA driver `550.144.03`.
-- CUDA 12.4 backends for Turing, Ampere and Ada.
-- CUDA 12.8 backend for Blackwell.
