@@ -34,19 +34,25 @@ List algorithms supported by the binary:
 HiveOS custom miner package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0.tar.gz
 ```
 
 MMPOS package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9-mmpos.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0-mmpos.tar.gz
+```
+
+Windows package:
+
+```text
+https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0-windows.zip
 ```
 
 Standalone launcher:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9
+https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0
 ```
 
 The release package selects the backend for the detected GPU architecture:
