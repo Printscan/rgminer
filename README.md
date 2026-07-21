@@ -152,7 +152,7 @@ https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.
         "miner": "rgminer",
         "template": "%WAL%",
         "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0.tar.gz",
-        "user_config": "--algo pearl
+        "user_config": "--algo pearl"
       },
       "pool_geo": []
     }
