@@ -21,10 +21,11 @@ List algorithms supported by the binary:
 
 | GPU | Architecture | OC Profile | Hashrate | Power | Efficiency | Energy Usage |
 |---|---|---:|---:|---:|---:|---:|
+| Tesla V100-SXM2-16GB | Volta | `0 / 1550 / 0` | **49.5 TH/s** | **280 W** | **0.176 TH/W** | **5.66 W/TH** |
 | RTX 2080 | Turing | `125 / 1650 / 5000` | **44.16 TH/s** | **160 W** | **0.276 TH/W** | **3.62 W/TH** |
 | RTX 3070m | Ampere | `250 / 1650 / 6000` | **65.3 TH/s** | **140 W** | **0.466 TH/W** | **2.14 W/TH** |
 | RTX 3070 | Ampere | `250 / 1450 / 6000` | **66.5 TH/s** | **130 W** | **0.512 TH/W** | **1.95 W/TH** |
-| CMP 170HX | Ampere | `250 / 1450 / 0` | **160 TH/s** | **210 W** | **0.761 TH/W** | **1.31 W/TH** |
+| CMP 170HX/A100 | Ampere | `250 / 1450 / 0` | **160 TH/s** | **210 W** | **0.761 TH/W** | **1.31 W/TH** |
 | RTX 4070 Ti | Ada | `350 / 2450 / 5000` | **145.3 TH/s** | **190 W** | **0.765 TH/W** | **1.31 W/TH** |
 | RTX 5070 Ti | Blackwell | `490 / 2450 / 7000` | **160.7 TH/s** | **218 W** | **0.724 TH/W** | **1.38 W/TH** |
 
