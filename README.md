@@ -150,7 +150,7 @@ https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.
       "miner": "custom",
       "miner_alt": "rgminer",
       "miner_config": {
-        "url": "prl.kryptex.network:7048",
+        "url": "YOUR_POOL",
         "algo": "pearlhash",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
