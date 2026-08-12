@@ -2,7 +2,7 @@
 
 CUDA miner with HiveOS and MMPOS integration.
 
-Current release: `v1.0.0`
+Current release: `v1.0.1`
 
 ## Supported Algorithms
 
@@ -19,28 +19,30 @@ List algorithms supported by the binary:
 ```
 ## Pearl Performance
 
-| GPU | Architecture | OC Profile | Hashrate | Power | Efficiency | Energy Usage |
-|---|---|---:|---:|---:|---:|---:|
-| Tesla V100-SXM2-16GB | Volta | `0 / 1550 / 0` | **49.5 TH/s** | **280 W** | **0.176 TH/W** | **5.66 W/TH** |
-| RTX 2080 | Turing | `125 / 1650 / 5000` | **44.16 TH/s** | **160 W** | **0.276 TH/W** | **3.62 W/TH** |
-| RTX 3070m | Ampere | `250 / 1650 / 6000` | **65.3 TH/s** | **140 W** | **0.466 TH/W** | **2.14 W/TH** |
-| RTX 3070 | Ampere | `250 / 1450 / 6000` | **66.5 TH/s** | **130 W** | **0.512 TH/W** | **1.95 W/TH** |
-| CMP 170HX/A100 | Ampere | `250 / 1450 / 0` | **160 TH/s** | **210 W** | **0.761 TH/W** | **1.31 W/TH** |
-| RTX 4070 Ti | Ada | `350 / 2450 / 5000` | **145.3 TH/s** | **190 W** | **0.765 TH/W** | **1.31 W/TH** |
-| RTX 5070 Ti | Blackwell | `490 / 2450 / 7000` | **160.7 TH/s** | **218 W** | **0.724 TH/W** | **1.38 W/TH** |
+| GPU | Architecture | Core Offset | Fix Core | Fix Mem | Mem Offset | Hashrate | Power | Efficiency |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| RTX 2080 | Turing | 125 | 1650 | 5000 | — | **49.2 TH/s** | **175 W** | **0.281 TH/W** |
+| CMP 50HX | Turing | 250 | 1650 | 5000 | — | **58.3 TH/s** | **205 W** | **0.284 TH/W** |
+| RTX 3070m | Ampere | 250 | 1650 | 6000 | — | **65.3 TH/s** | **140 W** | **0.466 TH/W** |
+| RTX 3070 | Ampere | 250 | 1650 | 5000 | — | **75.4 TH/s** | **165 W** | **0.457 TH/W** |
+| CMP 90HX | Ampere | 300 | 1650 | — | -2000 | **68.5 TH/s** | **240 W** | **0.285 TH/W** |
+| CMP 170HX | Ampere | 300 | 1455 | — | 0 | **173 TH/s** | **240 W** | **0.721 TH/W** |
+| RTX 4070 Ti | Ada | 350 | 2445 | 5000 | — | **145.3 TH/s** | **190 W** | **0.765 TH/W** |
+| RTX 4090 | Ada | 315 | 2445 | 5000 | — | **297 TH/s** | **410 W** | **0.724 TH/W** |
+| RTX 5070 Ti | Blackwell | 490 | 2445 | 7000 | — | **159.7 TH/s** | **214 W** | **0.746 TH/W** |
 
 ## Download
 
 HiveOS custom miner package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.gz
 ```
 
 MMPOS package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0-mmpos.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1-mmpos.tar.gz
 ```
 
 Windows package:
@@ -52,7 +54,7 @@ https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0-wind
 Standalone launcher:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0
+https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1
 ```
 
 The release package selects the backend for the detected GPU architecture:
@@ -143,16 +145,16 @@ https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.
     {
       "coin": "pearl",
       "pool_ssl": false,
-      "wal_id": 11039470,
+      "wal_id": 11121164,
       "dpool_ssl": false,
       "miner": "custom",
       "miner_alt": "rgminer",
       "miner_config": {
-        "url": "HOST:PORT",
+        "url": "prl.kryptex.network:7048",
+        "algo": "pearlhash",
         "miner": "rgminer",
-        "template": "%WAL%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0.tar.gz",
-        "user_config": "--algo pearl"
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.gz"
       },
       "pool_geo": []
     }
