@@ -48,7 +48,7 @@ https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1-mmpo
 Windows package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.0/rgminer-1.0.0-windows.zip
+https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1-windows.zip
 ```
 
 Standalone launcher:
