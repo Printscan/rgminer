@@ -133,7 +133,7 @@ LuckyPool example:
 Use this install URL:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v0.9.9/rgminer-0.9.9.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.gz
 ```
 
 ### Pearl HiveOS JSON
