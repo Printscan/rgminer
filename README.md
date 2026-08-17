@@ -26,7 +26,7 @@ List algorithms supported by the binary:
 | CMP 50HX | **64.87 TH/s** | **210 W** | 250 | 1650 | 5000 | — | **0.309 TH/W** |
 | RTX 3060 Ti | **61.4 TH/s** | **143 W** | 250 | 1650 | 5000 | — | **0.430 TH/W** |
 | RTX 3070m | **65.3 TH/s** | **130 W** | 250 | 1650 | 6000 | — | **0.502 TH/W** |
-| RTX 3070 | **75.0 TH/s** | **160 W** | 250 | 1650 | 5000 | — | **0.457 TH/W** |
+| RTX 3070 | **75.0 TH/s** | **160 W** | 250 | 1650 | 5000 | — | **0.468 TH/W** |
 | CMP 90HX | **68.5 TH/s** | **240 W** | 300 | 1650 | — | -2000 | **0.285 TH/W** |
 | RTX 3080 Ti | **128 TH/s** | **300 W** | 250 | 1650 | 5000 | — | **0.427 TH/W** |
 | CMP 170HX | **173 TH/s** | **240 W** | 300 | 1455 | — | 0 | **0.721 TH/W** |
@@ -136,7 +136,7 @@ LuckyPool example:
 Use this install URL:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hiveos.tar.gz
 ```
 
 ### Pearl HiveOS JSON
@@ -157,7 +157,7 @@ https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.
         "algo": "pearlhash",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -206,6 +206,7 @@ Multi-GPU example:
 --api-host HOST
 --api-port PORT
 --plain-console
+--no-cmp-unlock
 ```
 
 The default watchdog policy is `restart`.
