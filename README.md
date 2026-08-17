@@ -2,7 +2,7 @@
 
 CUDA miner with HiveOS and MMPOS integration.
 
-Current release: `v1.0.1`
+Current release: `v1.0.2`
 
 ## Supported Algorithms
 
@@ -19,42 +19,45 @@ List algorithms supported by the binary:
 ```
 ## Pearl Performance
 
-| GPU | Architecture | Core Offset | Fix Core | Fix Mem | Mem Offset | Hashrate | Power | Efficiency |
-|---|---|---:|---:|---:|---:|---:|---:|---:|
-| RTX 2080 | Turing | 125 | 1650 | 5000 | — | **49.2 TH/s** | **175 W** | **0.281 TH/W** |
-| CMP 50HX | Turing | 250 | 1650 | 5000 | — | **58.3 TH/s** | **205 W** | **0.284 TH/W** |
-| RTX 3070m | Ampere | 250 | 1650 | 6000 | — | **65.3 TH/s** | **140 W** | **0.466 TH/W** |
-| RTX 3070 | Ampere | 250 | 1650 | 5000 | — | **75.4 TH/s** | **165 W** | **0.457 TH/W** |
-| CMP 90HX | Ampere | 300 | 1650 | — | -2000 | **68.5 TH/s** | **240 W** | **0.285 TH/W** |
-| CMP 170HX | Ampere | 300 | 1455 | — | 0 | **173 TH/s** | **240 W** | **0.721 TH/W** |
-| RTX 4070 Ti | Ada | 350 | 2445 | 5000 | — | **145.3 TH/s** | **190 W** | **0.765 TH/W** |
-| RTX 4090 | Ada | 315 | 2445 | 5000 | — | **297 TH/s** | **410 W** | **0.724 TH/W** |
-| RTX 5070 Ti | Blackwell | 490 | 2445 | 7000 | — | **159.7 TH/s** | **214 W** | **0.746 TH/W** |
+| GPU | Hashrate | Power | Core Offset | Fix Core | Fix Mem | Mem Offset | Efficiency |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| CMP 40HX | **40 TH/s** | **150 W** | 250 | 1650 | 5000 | — | **0.267 TH/W** |
+| RTX 2080 | **55.2 TH/s** | **180 W** | 125 | 1650 | 5000 | — | **0.307 TH/W** |
+| CMP 50HX | **64.87 TH/s** | **210 W** | 250 | 1650 | 5000 | — | **0.309 TH/W** |
+| RTX 3060 Ti | **61.4 TH/s** | **143 W** | 250 | 1650 | 5000 | — | **0.430 TH/W** |
+| RTX 3070m | **65.3 TH/s** | **130 W** | 250 | 1650 | 6000 | — | **0.502 TH/W** |
+| RTX 3070 | **75.0 TH/s** | **160 W** | 250 | 1650 | 5000 | — | **0.457 TH/W** |
+| CMP 90HX | **68.5 TH/s** | **240 W** | 300 | 1650 | — | -2000 | **0.285 TH/W** |
+| RTX 3080 Ti | **128 TH/s** | **300 W** | 250 | 1650 | 5000 | — | **0.427 TH/W** |
+| CMP 170HX | **173 TH/s** | **240 W** | 300 | 1455 | — | 0 | **0.721 TH/W** |
+| RTX 4070 Ti | **143.5 TH/s** | **175 W** | 350 | 2445 | 5000 | — | **0.820 TH/W** |
+| RTX 4090 | **293 TH/s** | **380 W** | 315 | 2445 | 5000 | — | **0.771 TH/W** |
+| RTX 5070 Ti | **164.5 TH/s** | **208 W** | 490 | 2445 | 7000 | — | **0.791 TH/W** |
 
 ## Download
 
 HiveOS custom miner package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hiveos.tar.gz
 ```
 
 MMPOS package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1-mmpos.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-mmpos.tar.gz
 ```
 
 Windows package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1-windows.zip
+https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-windows-x64.zip
 ```
 
 Standalone launcher:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.1/rgminer-1.0.1
+https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2
 ```
 
 The release package selects the backend for the detected GPU architecture:
