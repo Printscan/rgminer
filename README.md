@@ -2,7 +2,7 @@
 
 CUDA miner with HiveOS and MMPOS integration.
 
-Current release: `v1.0.2`
+Current release: `v1.0.2b`
 
 ## Supported Algorithms
 
@@ -39,25 +39,25 @@ List algorithms supported by the binary:
 HiveOS custom miner package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hiveos.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.2b/rgminer-1.0.2b-hiveos.tar.gz
 ```
 
 MMPOS package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-mmpos.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.2b/rgminer-1.0.2b-mmpos.tar.gz
 ```
 
 Windows package:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-windows-x64.zip
+https://github.com/Printscan/rgminer/releases/download/v1.0.2b/rgminer-1.0.2b-windows.zip
 ```
 
 Standalone launcher:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2
+https://github.com/Printscan/rgminer/releases/download/v1.0.2b/rgminer-1.0.2b
 ```
 
 The release package selects the backend for the detected GPU architecture:
@@ -136,7 +136,7 @@ LuckyPool example:
 Use this install URL:
 
 ```text
-https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hiveos.tar.gz
+https://github.com/Printscan/rgminer/releases/download/v1.0.2b/rgminer-1.0.2b-hiveos.tar.gz
 ```
 
 ### Pearl HiveOS JSON
@@ -157,7 +157,7 @@ https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hive
         "algo": "pearlhash",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.2/rgminer-1.0.2-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.2b/rgminer-1.0.2b-hiveos.tar.gz"
       },
       "pool_geo": []
     }
