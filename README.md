@@ -9,8 +9,6 @@
   <a href="#cli-options"><img alt="CUDA" src="https://img.shields.io/badge/backend-CUDA-76b900"></a>
 </p>
 
----
-
 ## Contents / Оглавление / 目录
 
 - [PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能](#performans)
