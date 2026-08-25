@@ -22,29 +22,31 @@
 
 <a id="performans"></a>
 
-## [PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能](#contents)
+## PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能
 
-| GPU | Hashrate, TH/s | Power, W | Core Offset | Fix Core | Fix Mem | Mem Offset | Efficiency, TH/W |
+| GPU | Hashrate | Power | Core Offset | Fix Core | Fix Mem | Mem Offset | Efficiency |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| CMP 40HX | **47.1** | **132** | 255 | 1650 | 5000 | — | **0.357** |
-| RTX 2080 | **63.7** | **171** | 135 | 1650 | 5000 | — | **0.372** |
-| CMP 50HX | **76.35** | **210** | 255 | 1650 | 5000 | — | **0.364** |
-| CMP 70HX | **46.75** | **150** | 255 | 1650 | — | -2000 | **0.312** |
-| RTX 3060 Ti | **61.4** | **143** | 255 | 1650 | 5000 | — | **0.429** |
-| RTX 3070m | **65.3** | **130** | 255 | 1650 | 6000 | — | **0.502** |
-| RTX 3070 | **75.0** | **160** | 255 | 1650 | 5000 | — | **0.469** |
-| CMP 90HX | **70.35** | **210** | 300 | 1650 | — | -2000 | **0.335** |
-| RTX 3080 Ti | **128** | **300** | 255 | 1650 | 5000 | — | **0.427** |
-| CMP 170HX | **175** | **240** | 300 | 1455 | — | 0 | **0.729** |
-| RTX 4070 Ti | **143.5** | **175** | 345 | 2445 | 5000 | — | **0.820** |
-| RTX 4090 | **293** | **380** | 315 | 2445 | 5000 | — | **0.771** |
-| RTX 5070 Ti | **164.5** | **208** | 480 | 2445 | 7000 | — | **0.791** |
+| CMP 40HX | **47.1 TH/s** | **132 W** | 255 | 1650 | 5000 | — | **0.357 TH/W** |
+| RTX 2080 | **63.7 TH/s** | **171 W** | 135 | 1650 | 5000 | — | **0.372 TH/W** |
+| CMP 50HX | **76.35 TH/s** | **210 W** | 255 | 1650 | 5000 | — | **0.364 TH/W** |
+| CMP 70HX | **46.75 TH/s** | **150 W** | 255 | 1650 | — | -2000 | **0.312 TH/W** |
+| RTX 3060 Ti | **61.4 TH/s** | **143 W** | 255 | 1650 | 5000 | — | **0.429 TH/W** |
+| RTX 3070m | **65.3 TH/s** | **130 W** | 255 | 1650 | 6000 | — | **0.502 TH/W** |
+| RTX 3070 | **75.0 TH/s** | **160 W** | 255 | 1650 | 5000 | — | **0.469 TH/W** |
+| CMP 90HX | **70.35 TH/s** | **210 W** | 300 | 1650 | — | -2000 | **0.335 TH/W** |
+| RTX 3080 Ti | **128 TH/s** | **300 W** | 255 | 1650 | 5000 | — | **0.427 TH/W** |
+| CMP 170HX | **175 TH/s** | **240 W** | 300 | 1455 | — | 0 | **0.729 TH/W** |
+| RTX 4070 Ti | **143.5 TH/s** | **175 W** | 345 | 2445 | 5000 | — | **0.820 TH/W** |
+| RTX 4090 | **293 TH/s** | **380 W** | 315 | 2445 | 5000 | — | **0.771 TH/W** |
+| RTX 5070 Ti | **164.5 TH/s** | **208 W** | 480 | 2445 | 7000 | — | **0.791 TH/W** |
 
 ---
 
 <a id="hiveos"></a>
 
-## [HIVEOS](#contents)
+## HIVEOS
+
+[↑ К оглавлению](#contents)
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
@@ -81,7 +83,9 @@
 
 <a id="download"></a>
 
-## [DOWNLOAD / ЗАГРУЗКА / 下载](#contents)
+## DOWNLOAD / ЗАГРУЗКА / 下载
+
+[↑ К оглавлению](#contents)
 
 | Platform | Release file |
 |---|---|
@@ -95,7 +99,9 @@
 
 <a id="miner-settings"></a>
 
-## [MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置](#contents)
+## MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置
+
+[↑ К оглавлению](#contents)
 
 <a id="english"></a>
 
@@ -119,7 +125,9 @@
 
 <a id="quick-start"></a>
 
-## [Quick Start](#english-contents)
+## Quick Start
+
+[↑ Back to contents](#english-contents)
 
 Make the standalone Linux release executable and start it with an algorithm, pool and wallet:
 
@@ -173,7 +181,9 @@ The host must have a working NVIDIA driver, Docker and `nvidia-container-toolkit
 
 <a id="algorithms"></a>
 
-## [Algorithms](#english-contents)
+## Algorithms
+
+[↑ Back to contents](#english-contents)
 
 | `--algo` value | Purpose | Dev fee |
 |---|---|---|
@@ -196,7 +206,9 @@ EXFER example:
 
 <a id="cli-options"></a>
 
-## [CLI Options](#english-contents)
+## CLI Options
+
+[↑ Back to contents](#english-contents)
 
 The table below follows the actual `rgminer-1.0.3 --help` output.
 
@@ -237,7 +249,9 @@ API example:
 
 <a id="miner-api"></a>
 
-## [Miner API](#english-contents)
+## Miner API
+
+[↑ Back to contents](#english-contents)
 
 The protected release exposes a read-only JSON API on `127.0.0.1:9200` by default. The launcher aggregates statistics from all selected GPUs and CUDA backend processes.
 
@@ -315,7 +329,9 @@ Only `GET` is supported. Unknown paths return `404`, other methods return `405`,
 
 <a id="overclock"></a>
 
-## [Overclock](#english-contents)
+## Overclock
+
+[↑ Back to contents](#english-contents)
 
 Clock options use physical NVIDIA GPU indices and are applied through NVML.
 
@@ -345,7 +361,9 @@ Clock changes require sufficient NVIDIA driver permissions. Start with conservat
 
 <a id="cmp-options"></a>
 
-## [CMP Options](#english-contents)
+## CMP Options
+
+[↑ Back to contents](#english-contents)
 
 | Option | Description |
 |---|---|
@@ -356,7 +374,9 @@ Clock changes require sufficient NVIDIA driver permissions. Start with conservat
 
 <a id="troubleshooting"></a>
 
-## [Troubleshooting](#english-contents)
+## Troubleshooting
+
+[↑ Back to contents](#english-contents)
 
 ### Show release help
 
@@ -392,7 +412,9 @@ Add `--plain-console` to disable the live terminal interface.
 
 <a id="resources"></a>
 
-## [Resources](#english-contents)
+## Resources
+
+[↑ Back to contents](#english-contents)
 
 - [Releases](https://github.com/Printscan/rgminer/releases)
 - [Issues](https://github.com/Printscan/rgminer/issues)
@@ -424,7 +446,9 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 
 <a id="ru-quick-start"></a>
 
-## [Быстрый старт](#russian-contents)
+## Быстрый старт
+
+[↑ К оглавлению](#russian-contents)
 
 Сделайте standalone-файл исполняемым и запустите его, указав алгоритм, пул и кошелёк:
 
@@ -478,7 +502,9 @@ docker run -d \
 
 <a id="ru-algorithms"></a>
 
-## [Алгоритмы](#russian-contents)
+## Алгоритмы
+
+[↑ К оглавлению](#russian-contents)
 
 | Значение `--algo` | Назначение | Комиссия |
 |---|---|---|
@@ -501,7 +527,9 @@ docker run -d \
 
 <a id="ru-cli-options"></a>
 
-## [Параметры запуска](#russian-contents)
+## Параметры запуска
+
+[↑ К оглавлению](#russian-contents)
 
 Таблица составлена по фактическому выводу `rgminer-1.0.3 --help`.
 
@@ -542,7 +570,9 @@ docker run -d \
 
 <a id="ru-miner-api"></a>
 
-## [API майнера](#russian-contents)
+## API майнера
+
+[↑ К оглавлению](#russian-contents)
 
 Защищённый релиз по умолчанию предоставляет API статистики в формате JSON на `127.0.0.1:9200`. Launcher объединяет статистику всех выбранных GPU и CUDA backend-процессов.
 
@@ -620,7 +650,9 @@ curl -s http://127.0.0.1:9200/metrics |
 
 <a id="ru-overclock"></a>
 
-## [Применение настроек](#russian-contents)
+## Применение настроек
+
+[↑ К оглавлению](#russian-contents)
 
 Параметры частот используют физические индексы NVIDIA GPU и применяются через NVML.
 
@@ -650,7 +682,9 @@ curl -s http://127.0.0.1:9200/metrics |
 
 <a id="ru-cmp-options"></a>
 
-## [Параметры CMP](#russian-contents)
+## Параметры CMP
+
+[↑ К оглавлению](#russian-contents)
 
 | Параметр | Описание |
 |---|---|
@@ -661,7 +695,9 @@ curl -s http://127.0.0.1:9200/metrics |
 
 <a id="ru-troubleshooting"></a>
 
-## [Решение проблем](#russian-contents)
+## Решение проблем
+
+[↑ К оглавлению](#russian-contents)
 
 ### Показать справку релиза
 
@@ -697,7 +733,9 @@ chmod +x rgminer-1.0.3
 
 <a id="ru-resources"></a>
 
-## [Ресурсы](#russian-contents)
+## Ресурсы
+
+[↑ К оглавлению](#russian-contents)
 
 - [Релизы](https://github.com/Printscan/rgminer/releases)
 - [Сообщить о проблеме](https://github.com/Printscan/rgminer/issues)
@@ -729,7 +767,9 @@ chmod +x rgminer-1.0.3
 
 <a id="zh-quick-start"></a>
 
-## [快速开始](#chinese-contents)
+## 快速开始
+
+[↑ 返回目录](#chinese-contents)
 
 赋予 Linux 独立版可执行权限，然后指定算法、矿池和钱包启动：
 
@@ -783,7 +823,9 @@ docker run -d \
 
 <a id="zh-algorithms"></a>
 
-## [算法](#chinese-contents)
+## 算法
+
+[↑ 返回目录](#chinese-contents)
 
 | `--algo` 参数值 | 用途 | 开发者费用 |
 |---|---|---|
@@ -806,7 +848,9 @@ EXFER 示例：
 
 <a id="zh-cli-options"></a>
 
-## [命令行参数](#chinese-contents)
+## 命令行参数
+
+[↑ 返回目录](#chinese-contents)
 
 下表来自实际的 `rgminer-1.0.3 --help` 输出。
 
@@ -847,7 +891,9 @@ API 示例：
 
 <a id="zh-miner-api"></a>
 
-## [矿工 API](#chinese-contents)
+## 矿工 API
+
+[↑ 返回目录](#chinese-contents)
 
 受保护的发行版默认在 `127.0.0.1:9200` 提供只读 JSON API。启动器会汇总所有已选择 GPU 和 CUDA 后端进程的统计信息。
 
@@ -925,7 +971,9 @@ API 只支持 `GET`。未知路径返回 `404`，其他方法返回 `405`；一�
 
 <a id="zh-overclock"></a>
 
-## [超频设置](#chinese-contents)
+## 超频设置
+
+[↑ 返回目录](#chinese-contents)
 
 频率参数使用 NVIDIA GPU 的物理索引，并通过 NVML 应用。
 
@@ -955,7 +1003,9 @@ API 只支持 `GET`。未知路径返回 `404`，其他方法返回 `405`；一�
 
 <a id="zh-cmp-options"></a>
 
-## [CMP 参数](#chinese-contents)
+## CMP 参数
+
+[↑ 返回目录](#chinese-contents)
 
 | 参数 | 说明 |
 |---|---|
@@ -966,7 +1016,9 @@ API 只支持 `GET`。未知路径返回 `404`，其他方法返回 `405`；一�
 
 <a id="zh-troubleshooting"></a>
 
-## [故障排除](#chinese-contents)
+## 故障排除
+
+[↑ 返回目录](#chinese-contents)
 
 ### 显示发行版帮助
 
@@ -1002,7 +1054,9 @@ chmod +x rgminer-1.0.3
 
 <a id="zh-resources"></a>
 
-## [资源](#chinese-contents)
+## 资源
+
+[↑ 返回目录](#chinese-contents)
 
 - [发行版](https://github.com/Printscan/rgminer/releases)
 - [问题反馈](https://github.com/Printscan/rgminer/issues)
