@@ -88,9 +88,6 @@
 
 ## DOWNLOAD / ЗАГРУЗКА / 下载
 
-<details>
-<summary><strong>English</strong></summary>
-
 | Platform | Release file |
 |---|---|
 | Linux standalone | [`rgminer-1.0.3`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3) |
@@ -98,34 +95,6 @@
 | HiveOS | [`rgminer-1.0.3-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-hiveos.tar.gz) |
 | MMPOS | [`rgminer-1.0.3-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-mmpos.tar.gz) |
 | Docker | [`palmatorro/rgminer:1.0.3`](https://hub.docker.com/r/palmatorro/rgminer) |
-
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-| Платформа | Файл релиза |
-|---|---|
-| Linux standalone | [`rgminer-1.0.3`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3) |
-| Windows | [`rgminer-1.0.3-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-windows.zip) |
-| HiveOS | [`rgminer-1.0.3-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-hiveos.tar.gz) |
-| MMPOS | [`rgminer-1.0.3-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-mmpos.tar.gz) |
-| Docker | [`palmatorro/rgminer:1.0.3`](https://hub.docker.com/r/palmatorro/rgminer) |
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
-
-| 平台 | 发行文件 |
-|---|---|
-| Linux 独立版 | [`rgminer-1.0.3`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3) |
-| Windows | [`rgminer-1.0.3-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-windows.zip) |
-| HiveOS | [`rgminer-1.0.3-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-hiveos.tar.gz) |
-| MMPOS | [`rgminer-1.0.3-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-mmpos.tar.gz) |
-| Docker | [`palmatorro/rgminer:1.0.3`](https://hub.docker.com/r/palmatorro/rgminer) |
-
-</details>
 
 ---
 
