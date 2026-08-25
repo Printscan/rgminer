@@ -824,7 +824,13 @@ Clock changes require sufficient NVIDIA driver permissions. Start with conservat
 <a id="hiveos"></a>
 
 ## HIVEOS
-![alt text](image.png)
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
+    alt="rgminer"
+    width="100%"
+  />
+</p>
 ```json
 {
   "isFavorite": false,
