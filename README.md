@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">rgminer</h1>
+  <h1 align="center">RGminer</h1>
 </div>
 
 <p align="center">
