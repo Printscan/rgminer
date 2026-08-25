@@ -9,49 +9,42 @@
   <a href="#cli-options"><img alt="CUDA" src="https://img.shields.io/badge/backend-CUDA-76b900"></a>
 </p>
 
+<a id="contents"></a>
+
 ## Contents / Оглавление / 目录
 
 - [PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能](#performans)
 - [HIVEOS](#hiveos)
 - [DOWNLOAD / ЗАГРУЗКА / 下载](#download)
-- [QUICK START / БЫСТРЫЙ СТАРТ / 快速开始](#quick-start)
-- [ALGORITHMS / АЛГОРИТМЫ / 算法](#algorithms)
-- [CLI OPTIONS / ПАРАМЕТРЫ ЗАПУСКА / 命令行参数](#cli-options)
-- [MINER API / API МАЙНЕРА / 矿工 API](#miner-api)
-- [OVERCLOCK / ПРИМЕНЕНИЕ НАСТРОЕК / 超频设置](#overclock)
-- [CMP OPTIONS / ПАРАМЕТРЫ CMP / CMP 参数](#cmp-options)
-- [TROUBLESHOOTING / РЕШЕНИЕ ПРОБЛЕМ / 故障排除](#troubleshooting)
-- [RESOURCES / РЕСУРСЫ / 资源](#resources)
+- [MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置](#miner-settings)
 
 ---
 
 <a id="performans"></a>
 
-## PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能
+## [PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能](#contents)
 
-| GPU | Hashrate | Power | Core Offset | Fix Core | Fix Mem | Mem Offset | Efficiency |
+| GPU | Hashrate, TH/s | Power, W | Core Offset | Fix Core | Fix Mem | Mem Offset | Efficiency, TH/W |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| CMP 40HX | **47.1 TH/s** | **132 W** | 255 | 1650 | 5000 | — | **0.357 TH/W** |
-| RTX 2080 | **63.7 TH/s** | **171 W** | 135 | 1650 | 5000 | — | **0.372 TH/W** |
-| CMP 50HX | **76.35 TH/s** | **210 W** | 255 | 1650 | 5000 | — | **0.364 TH/W** |
-| CMP 70HX | **46.75 TH/s** | **150 W** | 255 | 1650 | — | -2000 | **0.312 TH/W** |
-| RTX 3060 Ti | **61.4 TH/s** | **143 W** | 255 | 1650 | 5000 | — | **0.429 TH/W** |
-| RTX 3070m | **65.3 TH/s** | **130 W** | 255 | 1650 | 6000 | — | **0.502 TH/W** |
-| RTX 3070 | **75.0 TH/s** | **160 W** | 255 | 1650 | 5000 | — | **0.469 TH/W** |
-| CMP 90HX | **70.35 TH/s** | **210 W** | 300 | 1650 | — | -2000 | **0.335 TH/W** |
-| RTX 3080 Ti | **128 TH/s** | **300 W** | 255 | 1650 | 5000 | — | **0.427 TH/W** |
-| CMP 170HX | **175 TH/s** | **240 W** | 300 | 1455 | — | 0 | **0.729 TH/W** |
-| RTX 4070 Ti | **143.5 TH/s** | **175 W** | 345 | 2445 | 5000 | — | **0.820 TH/W** |
-| RTX 4090 | **293 TH/s** | **380 W** | 315 | 2445 | 5000 | — | **0.771 TH/W** |
-| RTX 5070 Ti | **164.5 TH/s** | **208 W** | 480 | 2445 | 7000 | — | **0.791 TH/W** |
+| CMP 40HX | **47.1** | **132** | 255 | 1650 | 5000 | — | **0.357** |
+| RTX 2080 | **63.7** | **171** | 135 | 1650 | 5000 | — | **0.372** |
+| CMP 50HX | **76.35** | **210** | 255 | 1650 | 5000 | — | **0.364** |
+| CMP 70HX | **46.75** | **150** | 255 | 1650 | — | -2000 | **0.312** |
+| RTX 3060 Ti | **61.4** | **143** | 255 | 1650 | 5000 | — | **0.429** |
+| RTX 3070m | **65.3** | **130** | 255 | 1650 | 6000 | — | **0.502** |
+| RTX 3070 | **75.0** | **160** | 255 | 1650 | 5000 | — | **0.469** |
+| CMP 90HX | **70.35** | **210** | 300 | 1650 | — | -2000 | **0.335** |
+| RTX 3080 Ti | **128** | **300** | 255 | 1650 | 5000 | — | **0.427** |
+| CMP 170HX | **175** | **240** | 300 | 1455 | — | 0 | **0.729** |
+| RTX 4070 Ti | **143.5** | **175** | 345 | 2445 | 5000 | — | **0.820** |
+| RTX 4090 | **293** | **380** | 315 | 2445 | 5000 | — | **0.771** |
+| RTX 5070 Ti | **164.5** | **208** | 480 | 2445 | 7000 | — | **0.791** |
 
 ---
 
-<a id="download"></a>
-
 <a id="hiveos"></a>
 
-## HIVEOS
+## [HIVEOS](#contents)
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
@@ -86,7 +79,9 @@
 
 ---
 
-## DOWNLOAD / ЗАГРУЗКА / 下载
+<a id="download"></a>
+
+## [DOWNLOAD / ЗАГРУЗКА / 下载](#contents)
 
 | Platform | Release file |
 |---|---|
@@ -98,12 +93,33 @@
 
 ---
 
-<a id="quick-start"></a>
+<a id="miner-settings"></a>
 
-## QUICK START / БЫСТРЫЙ СТАРТ / 快速开始
+## [MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置](#contents)
+
+<a id="english"></a>
 
 <details>
 <summary><strong>English</strong></summary>
+
+<a id="english-contents"></a>
+
+## Contents
+
+- [Quick Start](#quick-start)
+- [Algorithms](#algorithms)
+- [CLI Options](#cli-options)
+- [Miner API](#miner-api)
+- [Overclock](#overclock)
+- [CMP Options](#cmp-options)
+- [Troubleshooting](#troubleshooting)
+- [Resources](#resources)
+
+---
+
+<a id="quick-start"></a>
+
+## [Quick Start](#english-contents)
 
 Make the standalone Linux release executable and start it with an algorithm, pool and wallet:
 
@@ -153,122 +169,11 @@ docker run -d \
 
 The host must have a working NVIDIA driver, Docker and `nvidia-container-toolkit`.
 
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-Сделайте standalone-файл исполняемым и запустите его, указав алгоритм, пул и кошелёк:
-
-```bash
-chmod +x rgminer-1.0.3
-
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --worker-name WORKER
-```
-
-Несколько резервных пулов указываются в порядке приоритета через запятую:
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST1:PORT1,HOST2:PORT2 \
-  --wallet WALLET
-```
-
-Для проверяемого TLS используйте `stratum+tls://` или `--stratum-tls`:
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum stratum+tls://HOST:PORT \
-  --wallet WALLET
-```
-
-Установка и запуск через Docker:
-
-```bash
-docker pull palmatorro/rgminer:1.0.3
-
-docker run -d \
-  --gpus all \
-  --restart unless-stopped \
-  --name rgminer \
-  palmatorro/rgminer:1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --worker-name docker-rig
-```
-
-На хосте должны быть установлены рабочий драйвер NVIDIA, Docker и `nvidia-container-toolkit`.
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
-
-赋予 Linux 独立版可执行权限，然后指定算法、矿池和钱包启动：
-
-```bash
-chmod +x rgminer-1.0.3
-
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --worker-name WORKER
-```
-
-可按优先顺序使用逗号指定多个备用矿池：
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST1:PORT1,HOST2:PORT2 \
-  --wallet WALLET
-```
-
-使用 `stratum+tls://` 或 `--stratum-tls` 启用经过证书验证的 TLS：
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum stratum+tls://HOST:PORT \
-  --wallet WALLET
-```
-
-通过 Docker 安装并运行：
-
-```bash
-docker pull palmatorro/rgminer:1.0.3
-
-docker run -d \
-  --gpus all \
-  --restart unless-stopped \
-  --name rgminer \
-  palmatorro/rgminer:1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --worker-name docker-rig
-```
-
-主机必须安装可用的 NVIDIA 驱动、Docker 和 `nvidia-container-toolkit`。
-
-</details>
-
 ---
 
 <a id="algorithms"></a>
 
-## ALGORITHMS / АЛГОРИТМЫ / 算法
-
-<details>
-<summary><strong>English</strong></summary>
+## [Algorithms](#english-contents)
 
 | `--algo` value | Purpose | Dev fee |
 |---|---|---|
@@ -287,60 +192,11 @@ EXFER example:
 ./rgminer-1.0.3 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
 ```
 
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-| Значение `--algo` | Назначение | Комиссия |
-|---|---|---|
-| `pearl` | Майнинг Pearl на GPU | 2% |
-| `exfer`, `exfer-argon2id` | Майнинг EXFER Argon2id через Stratum | 5% |
-
-Пример Pearl:
-
-```bash
-./rgminer-1.0.3 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-Пример EXFER:
-
-```bash
-./rgminer-1.0.3 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
-```
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
-
-| `--algo` 参数值 | 用途 | 开发者费用 |
-|---|---|---|
-| `pearl` | Pearl GPU 挖矿 | 2% |
-| `exfer`、`exfer-argon2id` | EXFER Argon2id Stratum 挖矿 | 5% |
-
-Pearl 示例：
-
-```bash
-./rgminer-1.0.3 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-EXFER 示例：
-
-```bash
-./rgminer-1.0.3 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
-```
-
-</details>
-
 ---
 
 <a id="cli-options"></a>
 
-## CLI OPTIONS / ПАРАМЕТРЫ ЗАПУСКА / 命令行参数
-
-<details>
-<summary><strong>English</strong></summary>
+## [CLI Options](#english-contents)
 
 The table below follows the actual `rgminer-1.0.3 --help` output.
 
@@ -377,96 +233,11 @@ API example:
   --api-port 9200
 ```
 
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-Таблица составлена по фактическому выводу `rgminer-1.0.3 --help`.
-
-### Подключение к пулу
-
-| Параметр | Описание |
-|---|---|
-| `--algo ALGO` | Выбор `pearl`, `exfer-argon2id` или псевдонима `exfer`. |
-| `--stratum HOST:PORT[,HOST:PORT]` | Адрес пула или список пулов по приоритету. Поддерживается `stratum+tls://`. |
-| `--wallet WALLET`, `--address WALLET` | Кошелёк для выплат или имя пользователя пула. |
-| `--worker NAME`, `--worker-name NAME` | Имя воркера или рига. |
-| `--stratum-pass PASS` | Пароль пула. |
-| `--stratum-tls` | Принудительно использовать TLS с проверкой сертификата. |
-| `--proto NAME` | Выбрать нестандартный протокол пула Pearl: `alphapool`, `herominers`, `kryptex`, `f2pool` или `pearlfortune`. Для автоматического AkoyaV2 параметр не указывается. |
-
-### GPU, API и безопасность
-
-| Параметр | Описание |
-|---|---|
-| `-d GPU[,GPU]`, `--devices GPU[,GPU]` | Выбор индексов CUDA-устройств. |
-| `--api-host HOST` | Адрес API. Используется вместе с `--api-port`. |
-| `--api-port PORT` | Порт API. Используется вместе с `--api-host`. |
-| `--plain-console` | Отключить интерактивный интерфейс и выводить обычный лог. |
-| `--watchdog=off`, `--watchdog=restart`, `--watchdog=reboot` | Не восстанавливаться, перезапустить майнер или перезагрузить риг после ошибки CUDA. |
-
-Пример включения API:
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --api-host 127.0.0.1 \
-  --api-port 9200
-```
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
-
-下表来自实际的 `rgminer-1.0.3 --help` 输出。
-
-### 矿池连接
-
-| 参数 | 说明 |
-|---|---|
-| `--algo ALGO` | 选择 `pearl`、`exfer-argon2id` 或别名 `exfer`。 |
-| `--stratum HOST:PORT[,HOST:PORT]` | 单个矿池地址或按优先级排列的矿池列表。支持 `stratum+tls://`。 |
-| `--wallet WALLET`、`--address WALLET` | 收款钱包或矿池用户名。 |
-| `--worker NAME`、`--worker-name NAME` | 工人或矿机名称。 |
-| `--stratum-pass PASS` | 矿池密码。 |
-| `--stratum-tls` | 强制使用并验证 TLS 证书。 |
-| `--proto NAME` | 选择非默认 Pearl 矿池协议：`alphapool`、`herominers`、`kryptex`、`f2pool` 或 `pearlfortune`。省略该参数时自动使用 AkoyaV2。 |
-
-### GPU、API 与安全
-
-| 参数 | 说明 |
-|---|---|
-| `-d GPU[,GPU]`、`--devices GPU[,GPU]` | 选择 CUDA 设备索引。 |
-| `--api-host HOST` | API 监听地址，与 `--api-port` 一起使用。 |
-| `--api-port PORT` | API 监听端口，与 `--api-host` 一起使用。 |
-| `--plain-console` | 禁用实时控制台界面并输出普通日志。 |
-| `--watchdog=off`、`--watchdog=restart`、`--watchdog=reboot` | CUDA 错误后选择不恢复、重启矿工或重启矿机。 |
-
-API 示例：
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --api-host 127.0.0.1 \
-  --api-port 9200
-```
-
-</details>
-
 ---
 
 <a id="miner-api"></a>
 
-## MINER API / API МАЙНЕРА / 矿工 API
-
-<details>
-<summary><strong>English</strong></summary>
+## [Miner API](#english-contents)
 
 The protected release exposes a read-only JSON API on `127.0.0.1:9200` by default. The launcher aggregates statistics from all selected GPUs and CUDA backend processes.
 
@@ -540,10 +311,238 @@ Only `GET` is supported. Unknown paths return `404`, other methods return `405`,
 > [!WARNING]
 > The API has no authentication or TLS. Keep the default `127.0.0.1` binding. Expose it to a network only through a firewall, authenticated reverse proxy or VPN.
 
+---
+
+<a id="overclock"></a>
+
+## [Overclock](#english-contents)
+
+Clock options use physical NVIDIA GPU indices and are applied through NVML.
+
+| Option | Description |
+|---|---|
+| `--cclock GPU:OFFSET[,GPU:OFFSET]` | Graphics clock offset in MHz. |
+| `--mclock GPU:OFFSET[,GPU:OFFSET]` | Memory transfer-rate offset in MHz. |
+| `--lock-cclock GPU:MHz[,GPU:MHz]` | Lock the graphics clock to an absolute value. |
+| `--lock-mclock GPU:MHz[,GPU:MHz]` | Lock the memory clock to an absolute value. |
+
+Multi-GPU example:
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --cclock 0:125,1:250 \
+  --mclock 0:500,1:1000 \
+  --lock-cclock 0:1650,1:2450 \
+  --lock-mclock 0:7000,1:7000
+```
+
+Clock changes require sufficient NVIDIA driver permissions. Start with conservative values and validate each GPU separately.
+
+---
+
+<a id="cmp-options"></a>
+
+## [CMP Options](#english-contents)
+
+| Option | Description |
+|---|---|
+| `--no-cmp-unlock` | Disable every automatic CMP unlock path. |
+| `--cmp-blob-source SOURCE` | Use an HTTPS base URL or an exact CMP blob file. |
+
+---
+
+<a id="troubleshooting"></a>
+
+## [Troubleshooting](#english-contents)
+
+### Show release help
+
+```bash
+./rgminer-1.0.3 --help
+```
+
+### Permission denied
+
+```bash
+chmod +x rgminer-1.0.3
+```
+
+### A GPU must not be used
+
+Select only the required CUDA indices:
+
+```bash
+./rgminer-1.0.3 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+```
+
+### CMP handling must be disabled
+
+```bash
+./rgminer-1.0.3 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+```
+
+### Plain logs are required
+
+Add `--plain-console` to disable the live terminal interface.
+
+---
+
+<a id="resources"></a>
+
+## [Resources](#english-contents)
+
+- [Releases](https://github.com/Printscan/rgminer/releases)
+- [Issues](https://github.com/Printscan/rgminer/issues)
+- [Repository](https://github.com/Printscan/rgminer)
+
+When reporting a problem, include the release filename, GPU model, NVIDIA driver version, operating system, complete command with the wallet removed, and the relevant log fragment.
+
 </details>
+
+<a id="russian"></a>
 
 <details>
 <summary><strong>Русский</strong></summary>
+
+<a id="russian-contents"></a>
+
+## Оглавление
+
+- [Быстрый старт](#ru-quick-start)
+- [Алгоритмы](#ru-algorithms)
+- [Параметры запуска](#ru-cli-options)
+- [API майнера](#ru-miner-api)
+- [Применение настроек](#ru-overclock)
+- [Параметры CMP](#ru-cmp-options)
+- [Решение проблем](#ru-troubleshooting)
+- [Ресурсы](#ru-resources)
+
+---
+
+<a id="ru-quick-start"></a>
+
+## [Быстрый старт](#russian-contents)
+
+Сделайте standalone-файл исполняемым и запустите его, указав алгоритм, пул и кошелёк:
+
+```bash
+chmod +x rgminer-1.0.3
+
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --worker-name WORKER
+```
+
+Несколько резервных пулов указываются в порядке приоритета через запятую:
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST1:PORT1,HOST2:PORT2 \
+  --wallet WALLET
+```
+
+Для проверяемого TLS используйте `stratum+tls://` или `--stratum-tls`:
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum stratum+tls://HOST:PORT \
+  --wallet WALLET
+```
+
+Установка и запуск через Docker:
+
+```bash
+docker pull palmatorro/rgminer:1.0.3
+
+docker run -d \
+  --gpus all \
+  --restart unless-stopped \
+  --name rgminer \
+  palmatorro/rgminer:1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --worker-name docker-rig
+```
+
+На хосте должны быть установлены рабочий драйвер NVIDIA, Docker и `nvidia-container-toolkit`.
+
+---
+
+<a id="ru-algorithms"></a>
+
+## [Алгоритмы](#russian-contents)
+
+| Значение `--algo` | Назначение | Комиссия |
+|---|---|---|
+| `pearl` | Майнинг Pearl на GPU | 2% |
+| `exfer`, `exfer-argon2id` | Майнинг EXFER Argon2id через Stratum | 5% |
+
+Пример Pearl:
+
+```bash
+./rgminer-1.0.3 --algo pearl --stratum HOST:PORT --wallet WALLET
+```
+
+Пример EXFER:
+
+```bash
+./rgminer-1.0.3 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+```
+
+---
+
+<a id="ru-cli-options"></a>
+
+## [Параметры запуска](#russian-contents)
+
+Таблица составлена по фактическому выводу `rgminer-1.0.3 --help`.
+
+### Подключение к пулу
+
+| Параметр | Описание |
+|---|---|
+| `--algo ALGO` | Выбор `pearl`, `exfer-argon2id` или псевдонима `exfer`. |
+| `--stratum HOST:PORT[,HOST:PORT]` | Адрес пула или список пулов по приоритету. Поддерживается `stratum+tls://`. |
+| `--wallet WALLET`, `--address WALLET` | Кошелёк для выплат или имя пользователя пула. |
+| `--worker NAME`, `--worker-name NAME` | Имя воркера или рига. |
+| `--stratum-pass PASS` | Пароль пула. |
+| `--stratum-tls` | Принудительно использовать TLS с проверкой сертификата. |
+| `--proto NAME` | Выбрать нестандартный протокол пула Pearl: `alphapool`, `herominers`, `kryptex`, `f2pool` или `pearlfortune`. Для автоматического AkoyaV2 параметр не указывается. |
+
+### GPU, API и безопасность
+
+| Параметр | Описание |
+|---|---|
+| `-d GPU[,GPU]`, `--devices GPU[,GPU]` | Выбор индексов CUDA-устройств. |
+| `--api-host HOST` | Адрес API. Используется вместе с `--api-port`. |
+| `--api-port PORT` | Порт API. Используется вместе с `--api-host`. |
+| `--plain-console` | Отключить интерактивный интерфейс и выводить обычный лог. |
+| `--watchdog=off`, `--watchdog=restart`, `--watchdog=reboot` | Не восстанавливаться, перезапустить майнер или перезагрузить риг после ошибки CUDA. |
+
+Пример включения API:
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --api-host 127.0.0.1 \
+  --api-port 9200
+```
+
+---
+
+<a id="ru-miner-api"></a>
+
+## [API майнера](#russian-contents)
 
 Защищённый релиз по умолчанию предоставляет API статистики в формате JSON на `127.0.0.1:9200`. Launcher объединяет статистику всех выбранных GPU и CUDA backend-процессов.
 
@@ -617,10 +616,238 @@ curl -s http://127.0.0.1:9200/metrics |
 > [!WARNING]
 > В API нет аутентификации и TLS. Оставляйте привязку к `127.0.0.1`. Открывайте API в сеть только через firewall, reverse proxy с аутентификацией или VPN.
 
+---
+
+<a id="ru-overclock"></a>
+
+## [Применение настроек](#russian-contents)
+
+Параметры частот используют физические индексы NVIDIA GPU и применяются через NVML.
+
+| Параметр | Описание |
+|---|---|
+| `--cclock GPU:OFFSET[,GPU:OFFSET]` | Смещение частоты ядра в МГц. |
+| `--mclock GPU:OFFSET[,GPU:OFFSET]` | Смещение эффективной частоты памяти в МГц. |
+| `--lock-cclock GPU:MHz[,GPU:MHz]` | Фиксация абсолютной частоты ядра. |
+| `--lock-mclock GPU:MHz[,GPU:MHz]` | Фиксация абсолютной частоты памяти. |
+
+Пример для нескольких GPU:
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --cclock 0:125,1:250 \
+  --mclock 0:500,1:1000 \
+  --lock-cclock 0:1650,1:2450 \
+  --lock-mclock 0:7000,1:7000
+```
+
+Для изменения частот нужны соответствующие разрешения драйвера NVIDIA. Начинайте с безопасных значений и проверяйте каждую карту отдельно.
+
+---
+
+<a id="ru-cmp-options"></a>
+
+## [Параметры CMP](#russian-contents)
+
+| Параметр | Описание |
+|---|---|
+| `--no-cmp-unlock` | Полностью отключить автоматические CMP unlock-пути. |
+| `--cmp-blob-source SOURCE` | Указать базовый HTTPS URL или точный файл CMP blob. |
+
+---
+
+<a id="ru-troubleshooting"></a>
+
+## [Решение проблем](#russian-contents)
+
+### Показать справку релиза
+
+```bash
+./rgminer-1.0.3 --help
+```
+
+### Ошибка Permission denied
+
+```bash
+chmod +x rgminer-1.0.3
+```
+
+### Нужно исключить GPU
+
+Укажите только необходимые CUDA-индексы:
+
+```bash
+./rgminer-1.0.3 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+```
+
+### Нужно отключить обработку CMP
+
+```bash
+./rgminer-1.0.3 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+```
+
+### Нужен обычный текстовый лог
+
+Добавьте `--plain-console`, чтобы отключить интерактивный терминальный интерфейс.
+
+---
+
+<a id="ru-resources"></a>
+
+## [Ресурсы](#russian-contents)
+
+- [Релизы](https://github.com/Printscan/rgminer/releases)
+- [Сообщить о проблеме](https://github.com/Printscan/rgminer/issues)
+- [Репозиторий](https://github.com/Printscan/rgminer)
+
+При сообщении об ошибке укажите имя релизного файла, модель GPU, версию драйвера NVIDIA, операционную систему, полную команду без кошелька и относящийся к проблеме фрагмент лога.
+
 </details>
+
+<a id="chinese"></a>
 
 <details>
 <summary><strong>中文</strong></summary>
+
+<a id="chinese-contents"></a>
+
+## 目录
+
+- [快速开始](#zh-quick-start)
+- [算法](#zh-algorithms)
+- [命令行参数](#zh-cli-options)
+- [矿工 API](#zh-miner-api)
+- [超频设置](#zh-overclock)
+- [CMP 参数](#zh-cmp-options)
+- [故障排除](#zh-troubleshooting)
+- [资源](#zh-resources)
+
+---
+
+<a id="zh-quick-start"></a>
+
+## [快速开始](#chinese-contents)
+
+赋予 Linux 独立版可执行权限，然后指定算法、矿池和钱包启动：
+
+```bash
+chmod +x rgminer-1.0.3
+
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --worker-name WORKER
+```
+
+可按优先顺序使用逗号指定多个备用矿池：
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST1:PORT1,HOST2:PORT2 \
+  --wallet WALLET
+```
+
+使用 `stratum+tls://` 或 `--stratum-tls` 启用经过证书验证的 TLS：
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum stratum+tls://HOST:PORT \
+  --wallet WALLET
+```
+
+通过 Docker 安装并运行：
+
+```bash
+docker pull palmatorro/rgminer:1.0.3
+
+docker run -d \
+  --gpus all \
+  --restart unless-stopped \
+  --name rgminer \
+  palmatorro/rgminer:1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --worker-name docker-rig
+```
+
+主机必须安装可用的 NVIDIA 驱动、Docker 和 `nvidia-container-toolkit`。
+
+---
+
+<a id="zh-algorithms"></a>
+
+## [算法](#chinese-contents)
+
+| `--algo` 参数值 | 用途 | 开发者费用 |
+|---|---|---|
+| `pearl` | Pearl GPU 挖矿 | 2% |
+| `exfer`、`exfer-argon2id` | EXFER Argon2id Stratum 挖矿 | 5% |
+
+Pearl 示例：
+
+```bash
+./rgminer-1.0.3 --algo pearl --stratum HOST:PORT --wallet WALLET
+```
+
+EXFER 示例：
+
+```bash
+./rgminer-1.0.3 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+```
+
+---
+
+<a id="zh-cli-options"></a>
+
+## [命令行参数](#chinese-contents)
+
+下表来自实际的 `rgminer-1.0.3 --help` 输出。
+
+### 矿池连接
+
+| 参数 | 说明 |
+|---|---|
+| `--algo ALGO` | 选择 `pearl`、`exfer-argon2id` 或别名 `exfer`。 |
+| `--stratum HOST:PORT[,HOST:PORT]` | 单个矿池地址或按优先级排列的矿池列表。支持 `stratum+tls://`。 |
+| `--wallet WALLET`、`--address WALLET` | 收款钱包或矿池用户名。 |
+| `--worker NAME`、`--worker-name NAME` | 工人或矿机名称。 |
+| `--stratum-pass PASS` | 矿池密码。 |
+| `--stratum-tls` | 强制使用并验证 TLS 证书。 |
+| `--proto NAME` | 选择非默认 Pearl 矿池协议：`alphapool`、`herominers`、`kryptex`、`f2pool` 或 `pearlfortune`。省略该参数时自动使用 AkoyaV2。 |
+
+### GPU、API 与安全
+
+| 参数 | 说明 |
+|---|---|
+| `-d GPU[,GPU]`、`--devices GPU[,GPU]` | 选择 CUDA 设备索引。 |
+| `--api-host HOST` | API 监听地址，与 `--api-port` 一起使用。 |
+| `--api-port PORT` | API 监听端口，与 `--api-host` 一起使用。 |
+| `--plain-console` | 禁用实时控制台界面并输出普通日志。 |
+| `--watchdog=off`、`--watchdog=restart`、`--watchdog=reboot` | CUDA 错误后选择不恢复、重启矿工或重启矿机。 |
+
+API 示例：
+
+```bash
+./rgminer-1.0.3 \
+  --algo pearl \
+  --stratum HOST:PORT \
+  --wallet WALLET \
+  --api-host 127.0.0.1 \
+  --api-port 9200
+```
+
+---
+
+<a id="zh-miner-api"></a>
+
+## [矿工 API](#chinese-contents)
 
 受保护的发行版默认在 `127.0.0.1:9200` 提供只读 JSON API。启动器会汇总所有已选择 GPU 和 CUDA 后端进程的统计信息。
 
@@ -694,74 +921,11 @@ API 只支持 `GET`。未知路径返回 `404`，其他方法返回 `405`；一�
 > [!WARNING]
 > API 不提供身份验证或 TLS。建议保留默认的 `127.0.0.1` 绑定。只有在防火墙、带身份验证的反向代理或 VPN 后方才应将 API 暴露到网络。
 
-</details>
-
 ---
 
-<a id="overclock"></a>
+<a id="zh-overclock"></a>
 
-## OVERCLOCK / ПРИМЕНЕНИЕ НАСТРОЕК / 超频设置
-
-<details>
-<summary><strong>English</strong></summary>
-
-Clock options use physical NVIDIA GPU indices and are applied through NVML.
-
-| Option | Description |
-|---|---|
-| `--cclock GPU:OFFSET[,GPU:OFFSET]` | Graphics clock offset in MHz. |
-| `--mclock GPU:OFFSET[,GPU:OFFSET]` | Memory transfer-rate offset in MHz. |
-| `--lock-cclock GPU:MHz[,GPU:MHz]` | Lock the graphics clock to an absolute value. |
-| `--lock-mclock GPU:MHz[,GPU:MHz]` | Lock the memory clock to an absolute value. |
-
-Multi-GPU example:
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --cclock 0:125,1:250 \
-  --mclock 0:500,1:1000 \
-  --lock-cclock 0:1650,1:2450 \
-  --lock-mclock 0:7000,1:7000
-```
-
-Clock changes require sufficient NVIDIA driver permissions. Start with conservative values and validate each GPU separately.
-
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-Параметры частот используют физические индексы NVIDIA GPU и применяются через NVML.
-
-| Параметр | Описание |
-|---|---|
-| `--cclock GPU:OFFSET[,GPU:OFFSET]` | Смещение частоты ядра в МГц. |
-| `--mclock GPU:OFFSET[,GPU:OFFSET]` | Смещение эффективной частоты памяти в МГц. |
-| `--lock-cclock GPU:MHz[,GPU:MHz]` | Фиксация абсолютной частоты ядра. |
-| `--lock-mclock GPU:MHz[,GPU:MHz]` | Фиксация абсолютной частоты памяти. |
-
-Пример для нескольких GPU:
-
-```bash
-./rgminer-1.0.3 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --cclock 0:125,1:250 \
-  --mclock 0:500,1:1000 \
-  --lock-cclock 0:1650,1:2450 \
-  --lock-mclock 0:7000,1:7000
-```
-
-Для изменения частот нужны соответствующие разрешения драйвера NVIDIA. Начинайте с безопасных значений и проверяйте каждую карту отдельно.
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
+## [超频设置](#chinese-contents)
 
 频率参数使用 NVIDIA GPU 的物理索引，并通过 NVML 应用。
 
@@ -787,122 +951,22 @@ Clock changes require sufficient NVIDIA driver permissions. Start with conservat
 
 修改频率需要足够的 NVIDIA 驱动权限。请从保守参数开始，并逐张验证 GPU。
 
-</details>
-
 ---
 
-<a id="cmp-options"></a>
+<a id="zh-cmp-options"></a>
 
-## CMP OPTIONS / ПАРАМЕТРЫ CMP / CMP 参数
-
-<details>
-<summary><strong>English</strong></summary>
-
-| Option | Description |
-|---|---|
-| `--no-cmp-unlock` | Disable every automatic CMP unlock path. |
-| `--cmp-blob-source SOURCE` | Use an HTTPS base URL or an exact CMP blob file. |
-
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-| Параметр | Описание |
-|---|---|
-| `--no-cmp-unlock` | Полностью отключить автоматические CMP unlock-пути. |
-| `--cmp-blob-source SOURCE` | Указать базовый HTTPS URL или точный файл CMP blob. |
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
+## [CMP 参数](#chinese-contents)
 
 | 参数 | 说明 |
 |---|---|
 | `--no-cmp-unlock` | 禁用所有自动 CMP 解锁流程。 |
 | `--cmp-blob-source SOURCE` | 指定 HTTPS 基础地址或确切的 CMP blob 文件。 |
 
-</details>
-
 ---
 
-<a id="troubleshooting"></a>
+<a id="zh-troubleshooting"></a>
 
-## TROUBLESHOOTING / РЕШЕНИЕ ПРОБЛЕМ / 故障排除
-
-<details>
-<summary><strong>English</strong></summary>
-
-### Show release help
-
-```bash
-./rgminer-1.0.3 --help
-```
-
-### Permission denied
-
-```bash
-chmod +x rgminer-1.0.3
-```
-
-### A GPU must not be used
-
-Select only the required CUDA indices:
-
-```bash
-./rgminer-1.0.3 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-### CMP handling must be disabled
-
-```bash
-./rgminer-1.0.3 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-### Plain logs are required
-
-Add `--plain-console` to disable the live terminal interface.
-
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-### Показать справку релиза
-
-```bash
-./rgminer-1.0.3 --help
-```
-
-### Ошибка Permission denied
-
-```bash
-chmod +x rgminer-1.0.3
-```
-
-### Нужно исключить GPU
-
-Укажите только необходимые CUDA-индексы:
-
-```bash
-./rgminer-1.0.3 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-### Нужно отключить обработку CMP
-
-```bash
-./rgminer-1.0.3 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-### Нужен обычный текстовый лог
-
-Добавьте `--plain-console`, чтобы отключить интерактивный терминальный интерфейс.
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
+## [故障排除](#chinese-contents)
 
 ### 显示发行版帮助
 
@@ -934,38 +998,11 @@ chmod +x rgminer-1.0.3
 
 添加 `--plain-console` 以禁用实时终端界面。
 
-</details>
-
 ---
 
-<a id="resources"></a>
+<a id="zh-resources"></a>
 
-## RESOURCES / РЕСУРСЫ / 资源
-
-<details>
-<summary><strong>English</strong></summary>
-
-- [Releases](https://github.com/Printscan/rgminer/releases)
-- [Issues](https://github.com/Printscan/rgminer/issues)
-- [Repository](https://github.com/Printscan/rgminer)
-
-When reporting a problem, include the release filename, GPU model, NVIDIA driver version, operating system, complete command with the wallet removed, and the relevant log fragment.
-
-</details>
-
-<details>
-<summary><strong>Русский</strong></summary>
-
-- [Релизы](https://github.com/Printscan/rgminer/releases)
-- [Сообщить о проблеме](https://github.com/Printscan/rgminer/issues)
-- [Репозиторий](https://github.com/Printscan/rgminer)
-
-При сообщении об ошибке укажите имя релизного файла, модель GPU, версию драйвера NVIDIA, операционную систему, полную команду без кошелька и относящийся к проблеме фрагмент лога.
-
-</details>
-
-<details>
-<summary><strong>中文</strong></summary>
+## [资源](#chinese-contents)
 
 - [发行版](https://github.com/Printscan/rgminer/releases)
 - [问题反馈](https://github.com/Printscan/rgminer/issues)
@@ -974,5 +1011,3 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 反馈问题时，请提供发行文件名、GPU 型号、NVIDIA 驱动版本、操作系统、移除钱包后的完整命令以及相关日志片段。
 
 </details>
-
----
