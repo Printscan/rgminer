@@ -14,6 +14,7 @@
 ## Contents / Оглавление / 目录
 
 - [PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能](#performans)
+- [HIVEOS](#hiveos)
 - [DOWNLOAD / ЗАГРУЗКА / 下载](#download)
 - [QUICK START / БЫСТРЫЙ СТАРТ / 快速开始](#quick-start)
 - [ALGORITHMS / АЛГОРИТМЫ / 算法](#algorithms)
@@ -21,7 +22,6 @@
 - [MINER API / API МАЙНЕРА / 矿工 API](#miner-api)
 - [OVERCLOCK / ПРИМЕНЕНИЕ НАСТРОЕК / 超频设置](#overclock)
 - [CMP OPTIONS / ПАРАМЕТРЫ CMP / CMP 参数](#cmp-options)
-- [HIVEOS](#hiveos)
 - [TROUBLESHOOTING / РЕШЕНИЕ ПРОБЛЕМ / 故障排除](#troubleshooting)
 - [RESOURCES / РЕСУРСЫ / 资源](#resources)
 
@@ -48,6 +48,43 @@
 | RTX 5070 Ti | **164.5 TH/s** | **208 W** | 480 | 2445 | 7000 | — | **0.791 TH/W** |
 
 <a id="download"></a>
+
+<a id="hiveos"></a>
+
+## HIVEOS
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
+    alt="rgminer"
+    width="100%"
+  />
+</p>
+
+```json
+{
+  "isFavorite": false,
+  "items": [
+    {
+      "coin": "pearl",
+      "pool_ssl": false,
+      "wal_id": 11121164,
+      "dpool_ssl": false,
+      "miner": "custom",
+      "miner_alt": "rgminer",
+      "miner_config": {
+        "url": " YOUR_POOL",
+        "algo": "pearlhash",
+        "miner": "rgminer",
+        "template": "%WAL%.%WORKER_NAME%",
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-hiveos.tar.gz"
+      },
+      "pool_geo": []
+    }
+  ]
+}
+```
+
+---
 
 ## DOWNLOAD / ЗАГРУЗКА / 下载
 
@@ -818,43 +855,6 @@ Clock changes require sufficient NVIDIA driver permissions. Start with conservat
 | `--cmp-blob-source SOURCE` | 指定 HTTPS 基础地址或确切的 CMP blob 文件。 |
 
 </details>
-
----
-
-<a id="hiveos"></a>
-
-## HIVEOS
-<p align="center">
-  <img
-    src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
-    alt="rgminer"
-    width="100%"
-  />
-</p>
-
-```json
-{
-  "isFavorite": false,
-  "items": [
-    {
-      "coin": "pearl",
-      "pool_ssl": false,
-      "wal_id": 11121164,
-      "dpool_ssl": false,
-      "miner": "custom",
-      "miner_alt": "rgminer",
-      "miner_config": {
-        "url": " YOUR_POOL",
-        "algo": "pearlhash",
-        "miner": "rgminer",
-        "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3-hiveos.tar.gz"
-      },
-      "pool_geo": []
-    }
-  ]
-}
-```
 
 ---
 
