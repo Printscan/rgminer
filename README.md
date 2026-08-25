@@ -9,17 +9,6 @@
   <a href="#cli-options"><img alt="CUDA" src="https://img.shields.io/badge/backend-CUDA-76b900"></a>
 </p>
 
-<a id="contents"></a>
-
-## Contents / Оглавление / 目录
-
-- [PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能](#performans)
-- [HIVEOS](#hiveos)
-- [DOWNLOAD / ЗАГРУЗКА / 下载](#download)
-- [MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置](#miner-settings)
-
----
-
 <a id="performans"></a>
 
 ## PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能
@@ -44,7 +33,7 @@
 
 <a id="hiveos"></a>
 
-## HIVEOS <sub><a href="#contents">↑ Contents / Оглавление / 目录</a></sub>
+## HIVEOS
 <p align="center">
   <img
     src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
@@ -79,10 +68,6 @@
 
 ---
 
-<a id="download"></a>
-
-## DOWNLOAD / ЗАГРУЗКА / 下载 <sub><a href="#contents">↑ Contents / Оглавление / 目录</a></sub>
-
 | Platform | Release file |
 |---|---|
 | Linux standalone | [`rgminer-1.0.3`](https://github.com/Printscan/rgminer/releases/download/v1.0.3/rgminer-1.0.3) |
@@ -95,8 +80,7 @@
 
 <a id="miner-settings"></a>
 
-## MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置 <sub><a href="#contents">↑ Contents / Оглавление / 目录</a></sub>
-
+## MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置
 <a id="english"></a>
 
 <details>
