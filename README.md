@@ -37,7 +37,7 @@
 ## HIVEOS
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/f3a6ea67-e42e-4f02-af65-4797d4afe268"
+    src="https://github.com/user-attachments/assets/26f9703d-1519-4977-9aed-b1ae3b15afd3"
     alt="rgminer"
     width="100%"
   />
