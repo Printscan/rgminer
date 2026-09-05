@@ -13,7 +13,7 @@
 
 ## PEARL PERFORMANS / ПРОИЗВОДИТЕЛЬНОСТЬ PEARL / PEARL 性能
 
-| GPU | Hashrate | Power, W | PL, W | Core, MHz | Memory, MHz | Mem offset | Efficiency, MH/W |
+| GPU | Hashrate | Power, W | Core Offset | Core, MHz | Memory, MHz | Mem offset | Efficiency, MH/W |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Tesla V100-SXM2-16GB | **37.7** | **215** | — | 1350 | — | — | **0.175** |
 | CMP 40HX | **52.45** | **153** | 255 | 1650 | 5000 | — | **0.343** |
