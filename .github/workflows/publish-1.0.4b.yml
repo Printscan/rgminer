@@ -29,9 +29,11 @@ jobs:
           fetch rgminer-1.0.4b
           fetch rgminer-1.0.4b-hiveos.tar.gz
           fetch rgminer-1.0.4b-mmpos.tar.gz
+          fetch rgminer-1.0.4-hiveos.tar.gz
           echo '86f00a7c4f37c14dbf7e72d8681384c3095254b6cc07ff4e13bc46fa3997b40c  rgminer-1.0.4b' | sha256sum --check
-          echo '3d72e2c7beb52fb8967be9db3e3c46278bc751b61a8d6997730188c8ac8ea9b8  rgminer-1.0.4b-hiveos.tar.gz' | sha256sum --check
+          echo 'd4c3fba5c534632457fede9073c630b2dedf99814b3fa667e38ee9d8e95d9d89  rgminer-1.0.4b-hiveos.tar.gz' | sha256sum --check
           echo 'ab148f9e997f59a40447021ac0544bfba279f5aae9a1b26503b2584e842d99f7  rgminer-1.0.4b-mmpos.tar.gz' | sha256sum --check
+          echo '153dfe5552ecc17966c87ea8c628e8d045520871280dedd58229d4200416de12  rgminer-1.0.4-hiveos.tar.gz' | sha256sum --check
 
       - name: Publish canonical and compatibility releases
         env:
@@ -55,7 +57,6 @@ jobs:
               --notes 'Protected Ubuntu 18 compatible release with resilient CMP blob mirror failover.'
           fi
           install -m 0755 rgminer-1.0.4b rgminer-1.0.4
-          install -m 0644 rgminer-1.0.4b-hiveos.tar.gz rgminer-1.0.4-hiveos.tar.gz
           install -m 0644 rgminer-1.0.4b-mmpos.tar.gz rgminer-1.0.4-mmpos.tar.gz
           gh release upload v1.0.4 \
             rgminer-1.0.4 \
