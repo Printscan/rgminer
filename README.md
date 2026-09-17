@@ -63,16 +63,17 @@
 <a id="hiveos"></a>
 
 ## HIVEOS
+
+<details>
+<summary><strong>Pearl — HiveOS</strong></summary>
+
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/c45e21e2-5a1a-44f9-ada2-65a359fd2185"
+    src="https://github.com/user-attachments/assets/b97cc6fb-025b-4c67-a310-4321512e5b67"
     alt="rgminer"
     width="100%"
   />
 </p>
-
-<details>
-<summary><strong>Pearl — HiveOS</strong></summary>
 
 ```json
 {
@@ -102,6 +103,14 @@
 
 <details>
 <summary><strong>Quantus — HiveOS</strong></summary>
+
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/e4778813-9447-4ac3-90c8-ad723e6256ee"
+    alt="rgminer"
+    width="100%"
+  />
+</p>
 
 ```json
 {
