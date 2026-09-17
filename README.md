@@ -65,7 +65,7 @@
 ## HIVEOS
 
 <details>
-<summary><strong>Pearl — HiveOS</strong></summary>
+<summary><strong>Pearl</strong></summary>
 
 <p align="center">
   <img
@@ -102,7 +102,7 @@
 </details>
 
 <details>
-<summary><strong>Quantus — HiveOS</strong></summary>
+<summary><strong>Quantus</strong></summary>
 
 <p align="center">
   <img
