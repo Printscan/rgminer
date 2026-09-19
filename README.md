@@ -146,7 +146,7 @@
 | Windows | [`rgminer-1.0.7-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-windows.zip) |
 | HiveOS | [`rgminer-1.0.7-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-hiveos.tar.gz) |
 | MMPOS | [`rgminer-1.0.7-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-mmpos.tar.gz) |
-| Docker | [`palmatorro/rgminer:1.0.5`](https://hub.docker.com/r/palmatorro/rgminer) |
+| Docker | [`palmatorro/rgminer:1.0.7`](https://hub.docker.com/r/palmatorro/rgminer) |
 
 ---
 
@@ -210,13 +210,13 @@ Use `stratum+tls://` or `--stratum-tls` to enable verified TLS:
 Docker installation and launch:
 
 ```bash
-docker pull palmatorro/rgminer:1.0.5
+docker pull palmatorro/rgminer:1.0.7
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.0.5 \
+  palmatorro/rgminer:1.0.7 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -532,13 +532,13 @@ chmod +x rgminer-1.0.7
 Установка и запуск через Docker:
 
 ```bash
-docker pull palmatorro/rgminer:1.0.5
+docker pull palmatorro/rgminer:1.0.7
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.0.5 \
+  palmatorro/rgminer:1.0.7 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -854,13 +854,13 @@ chmod +x rgminer-1.0.7
 通过 Docker 安装并运行：
 
 ```bash
-docker pull palmatorro/rgminer:1.0.5
+docker pull palmatorro/rgminer:1.0.7
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.0.5 \
+  palmatorro/rgminer:1.0.7 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
