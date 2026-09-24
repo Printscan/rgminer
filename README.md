@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/326320f2-f0f8-4978-bbfe-2c28da2ae56a" alt="RGminer" width="320" />
+  <img src="https://github.com/user-attachments/assets/326320f2-f0f8-4978-bbfe-2c28da2ae56a" alt="RGminer" width="640" />
 </div>
 
 <p align="center">
