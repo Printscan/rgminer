@@ -1,9 +1,9 @@
 <div align="center">
-  <h1 align="center">RGminer</h1>
+  <img src="https://github.com/user-attachments/assets/326320f2-f0f8-4978-bbfe-2c28da2ae56a" alt="RGminer" width="320" />
 </div>
 
 <p align="center">
-  <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.0.7-2ea44f"></a>
+  <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.0.8-2ea44f"></a>
   <a href="#download"><img alt="Platforms" src="https://img.shields.io/badge/platforms-Linux%20%7C%20Windows%20%7C%20Docker-blue"></a>
   <a href="#overview"><img alt="GPU" src="https://img.shields.io/badge/GPU-NVIDIA-76b900"></a>
   <a href="#cli-options"><img alt="CUDA" src="https://img.shields.io/badge/backend-CUDA-76b900"></a>
@@ -19,19 +19,19 @@
 | GPU | Hashrate | Power, W | Core Offset | Core, MHz | Memory, MHz | Mem offset | Efficiency, MH/W |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Tesla V100-SXM2-16GB | **37.70** | **215** | — | 1350 | — | — | **0.175** |
-| CMP 40HX | **52.60** | **153** | 255 | 1650 | 5000 | — | **0.343** |
-| RTX 2080 | **75.47** | **187** | 135 | 1650 | 5000 | — | **0.403** |
-| CMP 50HX | **84.50** | **225** | 255 | 1650 | 5000 | — | **0.374** |
-| CMP 70HX | **46.30** | **152** | 255 | 1650 | — | -2000 | **0.305** |
-| RTX 3060 Ti | **61.96** | **143** | 255 | 1650 | 5000 | — | **0.433** |
-| RTX 3070m | **65.70** | **130** | 255 | 1650 | 6000 | — | **0.505** |
-| RTX 3070 | **75.50** | **160** | 255 | 1650 | 5000 | — | **0.472** |
-| CMP 90HX | **70.90** | **202** | 300 | 1650 | — | -2000 | **0.351** |
-| RTX 3080 Ti | **129.50** | **300** | 255 | 1650 | 5000 | — | **0.432** |
-| CMP 170HX | **175.00** | **205** | 300 | 1455 | — | 0 | **0.854** |
+| CMP 40HX | **52.60** | **139.12** | 255 | 1650 | 5000 | — | **0.378** |
+| RTX 2080 | **75.47** | **178.59** | 135 | 1650 | 5000 | — | **0.423** |
+| CMP 50HX | **90.50** | **220.88** | 255 | 1650 | 5000 | — | **0.410** |
+| CMP 70HX | **46.30** | **139.08** | 255 | 1650 | — | -2000 | **0.333** |
+| RTX 3060 Ti | **61.96** | **130.85** | 255 | 1650 | 5000 | — | **0.474** |
+| RTX 3070m | **65.70** | **118.95** | 255 | 1650 | 6000 | — | **0.552** |
+| RTX 3070 | **75.50** | **146.40** | 255 | 1650 | 5000 | — | **0.516** |
+| CMP 90HX | **70.90** | **184.83** | 300 | 1650 | — | -2000 | **0.384** |
+| RTX 3080 Ti | **129.50** | **274.50** | 255 | 1650 | 5000 | — | **0.472** |
+| CMP 170HX | **175.00** | **187.58** | 300 | 1455 | — | 0 | **0.933** |
 | RTX 4070 Ti | **146.50** | **174** | 345 | 2445 | 5000 | — | **0.842** |
-| RTX 4090 | **298.05** | **370** | 315 | 2445 | 5000 | — | **0.806** |
-| RTX 5070 Ti | **167.50** | **210** | 480 | 2445 | 7000 | — | **0.798** |
+| RTX 4090 | **298.05** | **340.40** | 315 | 2445 | 5000 | — | **0.876** |
+| RTX 5070 Ti | **169.02** | **191.10** | 480 | 2445 | 7000 | — | **0.884** |
 
 </details>
 
@@ -69,7 +69,7 @@
 
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/cbd66df1-a529-449b-a0e3-f1a2c2bf5cb3"
+    src="https://github.com/user-attachments/assets/82ddec81-1931-4aff-a02e-5895ad88deca"
     alt="rgminer"
     width="100%"
   />
@@ -87,11 +87,11 @@
       "miner": "custom",
       "miner_alt": "rgminer",
       "miner_config": {
-        "url": " YOUR_POOL",
+        "url": "YOUR_POOL",
         "algo": "pearlhash",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.8/rgminer-1.0.8-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -106,7 +106,7 @@
 
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/09bdca1f-badf-4c42-90db-a05521945f8d"
+    src="https://github.com/user-attachments/assets/2f16a2c9-bf75-47b5-9f83-0e61501ad7c3"
     alt="rgminer"
     width="100%"
   />
@@ -124,11 +124,11 @@
       "miner": "custom",
       "miner_alt": "rgminer",
       "miner_config": {
-        "url": " YOUR_POOL",
+        "url": "YOUR_POOL",
         "algo": "quantus",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.0.8/rgminer-1.0.8-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -142,11 +142,11 @@
 
 | Platform | Release file |
 |---|---|
-| Linux standalone | [`rgminer-1.0.7`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7) |
-| Windows | [`rgminer-1.0.7-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-windows.zip) |
-| HiveOS | [`rgminer-1.0.7-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-hiveos.tar.gz) |
-| MMPOS | [`rgminer-1.0.7-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.7/rgminer-1.0.7-mmpos.tar.gz) |
-| Docker | [`palmatorro/rgminer:1.0.7`](https://hub.docker.com/r/palmatorro/rgminer) |
+| Linux standalone | [`rgminer-1.0.8`](https://github.com/Printscan/rgminer/releases/download/v1.0.8/rgminer-1.0.8) |
+| Windows | [`rgminer-1.0.8-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.0.8/rgminer-1.0.8-windows.zip) |
+| HiveOS | [`rgminer-1.0.8-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.8/rgminer-1.0.8-hiveos.tar.gz) |
+| MMPOS | [`rgminer-1.0.8-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.0.8/rgminer-1.0.8-mmpos.tar.gz) |
+| Docker | [`palmatorro/rgminer:1.0.8`](https://hub.docker.com/r/palmatorro/rgminer) |
 
 ---
 
@@ -165,6 +165,7 @@
 - [Quick Start](#quick-start)
 - [Algorithms](#algorithms)
 - [CLI Options](#cli-options)
+- [Web Panel](#web-panel)
 - [Miner API](#miner-api)
 - [Overclock](#overclock)
 - [CMP Options](#cmp-options)
@@ -180,9 +181,9 @@
 Make the standalone Linux release executable and start it with an algorithm, pool and wallet:
 
 ```bash
-chmod +x rgminer-1.0.7
+chmod +x rgminer-1.0.8
 
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -192,7 +193,7 @@ chmod +x rgminer-1.0.7
 Several pools can be specified in priority order:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -201,7 +202,7 @@ Several pools can be specified in priority order:
 Use `stratum+tls://` or `--stratum-tls` to enable verified TLS:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -210,13 +211,13 @@ Use `stratum+tls://` or `--stratum-tls` to enable verified TLS:
 Docker installation and launch:
 
 ```bash
-docker pull palmatorro/rgminer:1.0.7
+docker pull palmatorro/rgminer:1.0.8
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.0.7 \
+  palmatorro/rgminer:1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -240,19 +241,19 @@ The host must have a working NVIDIA driver, Docker and `nvidia-container-toolkit
 Pearl example:
 
 ```bash
-./rgminer-1.0.7 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Quantus example (2% dev fee):
 
 ```bash
-./rgminer-1.0.7 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 EXFER example:
 
 ```bash
-./rgminer-1.0.7 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -261,7 +262,7 @@ EXFER example:
 
 ## CLI Options <sub><a href="#english-contents">↑ Back to contents</a></sub>
 
-The table below follows the actual `rgminer-1.0.7 --help` output.
+The table below describes the `rgminer-1.0.8` command-line options.
 
 ### Pool connection
 
@@ -280,6 +281,7 @@ The table below follows the actual `rgminer-1.0.7 --help` output.
 | Option | Description |
 |---|---|
 | `-d GPU[,GPU]`, `--devices GPU[,GPU]` | Select CUDA device indices. |
+| `--token TOKEN` | Connect to your account on the official web panel; its address is built in. |
 | `--api-host HOST` | API listener address. Use with `--api-port`. |
 | `--api-port PORT` | API listener port. Use with `--api-host`. |
 | `--plain-console` | Disable the live console UI and print plain log output. |
@@ -289,13 +291,29 @@ The table below follows the actual `rgminer-1.0.7 --help` output.
 API example:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
   --api-host 127.0.0.1 \
   --api-port 9200
 ```
+
+---
+
+<a id="web-panel"></a>
+
+## Web Panel <sub><a href="#english-contents">↑ Back to contents</a></sub>
+
+Open [rgminer.net](https://rgminer.net/) and create a registration token in your account. Add it to your normal mining command:
+
+```bash
+./rgminer-1.0.8 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+```
+
+The official panel address and its server trust anchor are built into this release; no extra panel address is needed. The token is displayed only when created, so copy it then and keep it private. Mining without the panel does not require a token.
+
+The panel shows rig status, live GPU telemetry and hashrate history. You can edit the algorithm, wallet, worker, pools and watchdog, apply GPU profiles and per-card settings as a batch, and use available miner start, stop or restart controls. A rig's panel access can be revoked even while it is offline.
 
 ---
 
@@ -308,7 +326,7 @@ The protected release exposes a read-only JSON API on `127.0.0.1:9200` by defaul
 Change the listener address or port when starting the miner:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -394,7 +412,7 @@ Clock options use physical NVIDIA GPU indices and are applied through NVML. A va
 Multi-GPU example:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -434,13 +452,13 @@ CMP unlock options are available on Linux only. CMP blob download mirrors are us
 ### Show release help
 
 ```bash
-./rgminer-1.0.7 --help
+./rgminer-1.0.8 --help
 ```
 
 ### Permission denied
 
 ```bash
-chmod +x rgminer-1.0.7
+chmod +x rgminer-1.0.8
 ```
 
 ### A GPU must not be used
@@ -448,13 +466,13 @@ chmod +x rgminer-1.0.7
 Select only the required CUDA indices:
 
 ```bash
-./rgminer-1.0.7 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### CMP handling must be disabled
 
 ```bash
-./rgminer-1.0.7 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Plain logs are required
@@ -487,6 +505,7 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 - [Быстрый старт](#ru-quick-start)
 - [Алгоритмы](#ru-algorithms)
 - [Параметры запуска](#ru-cli-options)
+- [Веб-панель](#ru-web-panel)
 - [API майнера](#ru-miner-api)
 - [Применение настроек](#ru-overclock)
 - [Параметры CMP](#ru-cmp-options)
@@ -502,9 +521,9 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 Сделайте standalone-файл исполняемым и запустите его, указав алгоритм, пул и кошелёк:
 
 ```bash
-chmod +x rgminer-1.0.7
+chmod +x rgminer-1.0.8
 
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -514,7 +533,7 @@ chmod +x rgminer-1.0.7
 Несколько резервных пулов указываются в порядке приоритета через запятую:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -523,7 +542,7 @@ chmod +x rgminer-1.0.7
 Для проверяемого TLS используйте `stratum+tls://` или `--stratum-tls`:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -532,13 +551,13 @@ chmod +x rgminer-1.0.7
 Установка и запуск через Docker:
 
 ```bash
-docker pull palmatorro/rgminer:1.0.7
+docker pull palmatorro/rgminer:1.0.8
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.0.7 \
+  palmatorro/rgminer:1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -562,19 +581,19 @@ docker run -d \
 Пример Pearl:
 
 ```bash
-./rgminer-1.0.7 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Пример Quantus (комиссия 2%):
 
 ```bash
-./rgminer-1.0.7 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 Пример EXFER:
 
 ```bash
-./rgminer-1.0.7 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -583,7 +602,7 @@ docker run -d \
 
 ## Параметры запуска <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
 
-Таблица составлена по фактическому выводу `rgminer-1.0.7 --help`.
+Ниже описаны параметры запуска `rgminer-1.0.8`.
 
 ### Подключение к пулу
 
@@ -602,6 +621,7 @@ docker run -d \
 | Параметр | Описание |
 |---|---|
 | `-d GPU[,GPU]`, `--devices GPU[,GPU]` | Выбор индексов CUDA-устройств. |
+| `--token TOKEN` | Подключить майнер к аккаунту официальной веб-панели; её адрес уже встроен. |
 | `--api-host HOST` | Адрес API. Используется вместе с `--api-port`. |
 | `--api-port PORT` | Порт API. Используется вместе с `--api-host`. |
 | `--plain-console` | Отключить интерактивный интерфейс и выводить обычный лог. |
@@ -611,13 +631,29 @@ docker run -d \
 Пример включения API:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
   --api-host 127.0.0.1 \
   --api-port 9200
 ```
+
+---
+
+<a id="ru-web-panel"></a>
+
+## Веб-панель <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
+
+Откройте [rgminer.net](https://rgminer.net/) и создайте регистрационный токен в своём аккаунте. Добавьте его к обычной команде запуска:
+
+```bash
+./rgminer-1.0.8 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+```
+
+Адрес официальной панели и ключ проверки сервера уже встроены в этот релиз — указывать отдельный адрес не нужно. Токен показывается только при создании: сразу сохраните его и никому не передавайте. Для майнинга без панели токен не требуется.
+
+В панели доступны состояние ферм, телеметрия GPU в реальном времени и история хешрейта. Можно менять алгоритм, кошелёк, имя воркера, пулы и watchdog, применять профили и настройки GPU ко всем выбранным картам пакетом, а также использовать доступные команды запуска, остановки и перезапуска майнера. Доступ к ферме можно отозвать, даже если она не в сети.
 
 ---
 
@@ -630,7 +666,7 @@ docker run -d \
 Адрес и порт можно изменить при запуске:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -716,7 +752,7 @@ curl -s http://127.0.0.1:9200/metrics |
 Пример для нескольких GPU:
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -756,13 +792,13 @@ curl -s http://127.0.0.1:9200/metrics |
 ### Показать справку релиза
 
 ```bash
-./rgminer-1.0.7 --help
+./rgminer-1.0.8 --help
 ```
 
 ### Ошибка Permission denied
 
 ```bash
-chmod +x rgminer-1.0.7
+chmod +x rgminer-1.0.8
 ```
 
 ### Нужно исключить GPU
@@ -770,13 +806,13 @@ chmod +x rgminer-1.0.7
 Укажите только необходимые CUDA-индексы:
 
 ```bash
-./rgminer-1.0.7 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Нужно отключить обработку CMP
 
 ```bash
-./rgminer-1.0.7 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Нужен обычный текстовый лог
@@ -809,6 +845,7 @@ chmod +x rgminer-1.0.7
 - [快速开始](#zh-quick-start)
 - [算法](#zh-algorithms)
 - [命令行参数](#zh-cli-options)
+- [网页面板](#zh-web-panel)
 - [矿工 API](#zh-miner-api)
 - [超频设置](#zh-overclock)
 - [CMP 参数](#zh-cmp-options)
@@ -824,9 +861,9 @@ chmod +x rgminer-1.0.7
 赋予 Linux 独立版可执行权限，然后指定算法、矿池和钱包启动：
 
 ```bash
-chmod +x rgminer-1.0.7
+chmod +x rgminer-1.0.8
 
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -836,7 +873,7 @@ chmod +x rgminer-1.0.7
 可按优先顺序使用逗号指定多个备用矿池：
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -845,7 +882,7 @@ chmod +x rgminer-1.0.7
 使用 `stratum+tls://` 或 `--stratum-tls` 启用经过证书验证的 TLS：
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -854,13 +891,13 @@ chmod +x rgminer-1.0.7
 通过 Docker 安装并运行：
 
 ```bash
-docker pull palmatorro/rgminer:1.0.7
+docker pull palmatorro/rgminer:1.0.8
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.0.7 \
+  palmatorro/rgminer:1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -884,19 +921,19 @@ docker run -d \
 Pearl 示例：
 
 ```bash
-./rgminer-1.0.7 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Quantus 示例（开发者费用 2%）：
 
 ```bash
-./rgminer-1.0.7 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 EXFER 示例：
 
 ```bash
-./rgminer-1.0.7 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -905,7 +942,7 @@ EXFER 示例：
 
 ## 命令行参数 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
 
-下表来自实际的 `rgminer-1.0.7 --help` 输出。
+下表介绍 `rgminer-1.0.8` 的命令行参数。
 
 ### 矿池连接
 
@@ -924,6 +961,7 @@ EXFER 示例：
 | 参数 | 说明 |
 |---|---|
 | `-d GPU[,GPU]`、`--devices GPU[,GPU]` | 选择 CUDA 设备索引。 |
+| `--token TOKEN` | 将矿机接入官方网页面板账户；面板地址已内置。 |
 | `--api-host HOST` | API 监听地址，与 `--api-port` 一起使用。 |
 | `--api-port PORT` | API 监听端口，与 `--api-host` 一起使用。 |
 | `--plain-console` | 禁用实时控制台界面并输出普通日志。 |
@@ -933,13 +971,29 @@ EXFER 示例：
 API 示例：
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
   --api-host 127.0.0.1 \
   --api-port 9200
 ```
+
+---
+
+<a id="zh-web-panel"></a>
+
+## 网页面板 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
+
+打开 [rgminer.net](https://rgminer.net/)，在账户中创建注册令牌，然后将其加入平时的挖矿启动命令：
+
+```bash
+./rgminer-1.0.8 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+```
+
+本版本已内置官方面板地址及服务器信任锚，无须另行指定面板地址。令牌仅在创建时显示，请立即妥善保存，切勿泄露。不使用面板挖矿时，无须提供令牌。
+
+面板可查看矿机状态、GPU 实时遥测数据及算力历史；可修改算法、钱包、矿工名称、矿池和 watchdog，并批量应用 GPU 配置文件及各显卡设置。还可使用当前可用的矿工启动、停止和重启命令。矿机离线时也能撤销其面板访问权限。
 
 ---
 
@@ -952,7 +1006,7 @@ API 示例：
 启动矿工时可以修改监听地址或端口：
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -1038,7 +1092,7 @@ API 只支持 `GET`。未知路径返回 `404`，其他方法返回 `405`；一�
 多 GPU 示例：
 
 ```bash
-./rgminer-1.0.7 \
+./rgminer-1.0.8 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -1078,13 +1132,13 @@ CMP 解锁参数仅适用于 Linux。可用时会自动使用 CMP blob 下载镜
 ### 显示发行版帮助
 
 ```bash
-./rgminer-1.0.7 --help
+./rgminer-1.0.8 --help
 ```
 
 ### Permission denied 错误
 
 ```bash
-chmod +x rgminer-1.0.7
+chmod +x rgminer-1.0.8
 ```
 
 ### 不使用某张 GPU
@@ -1092,13 +1146,13 @@ chmod +x rgminer-1.0.7
 仅选择需要的 CUDA 设备索引：
 
 ```bash
-./rgminer-1.0.7 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### 禁用 CMP 处理
 
 ```bash
-./rgminer-1.0.7 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.0.8 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### 需要普通文本日志
