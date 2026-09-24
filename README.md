@@ -3,6 +3,10 @@
 </div>
 
 <p align="center">
+  <a href="https://rgminer.net/"><img alt="Official website and web panel: rgminer.net" src="https://img.shields.io/badge/Website-rgminer.net-ff743d?style=for-the-badge" /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.0.8-2ea44f"></a>
   <a href="#download"><img alt="Platforms" src="https://img.shields.io/badge/platforms-Linux%20%7C%20Windows%20%7C%20Docker-blue"></a>
   <a href="#overview"><img alt="GPU" src="https://img.shields.io/badge/GPU-NVIDIA-76b900"></a>
@@ -485,6 +489,7 @@ Add `--plain-console` to disable the live terminal interface.
 
 ## Resources <sub><a href="#english-contents">↑ Back to contents</a></sub>
 
+- [Official website and web panel](https://rgminer.net/)
 - [Releases](https://github.com/Printscan/rgminer/releases)
 - [Issues](https://github.com/Printscan/rgminer/issues)
 - [Repository](https://github.com/Printscan/rgminer)
@@ -825,6 +830,7 @@ chmod +x rgminer-1.0.8
 
 ## Ресурсы <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
 
+- [Официальный сайт и веб-панель](https://rgminer.net/)
 - [Релизы](https://github.com/Printscan/rgminer/releases)
 - [Сообщить о проблеме](https://github.com/Printscan/rgminer/issues)
 - [Репозиторий](https://github.com/Printscan/rgminer)
@@ -1165,6 +1171,7 @@ chmod +x rgminer-1.0.8
 
 ## 资源 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
 
+- [官方网站与网页面板](https://rgminer.net/)
 - [发行版](https://github.com/Printscan/rgminer/releases)
 - [问题反馈](https://github.com/Printscan/rgminer/issues)
 - [代码仓库](https://github.com/Printscan/rgminer)
