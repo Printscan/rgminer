@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <a href="https://rgminer.net/"><img alt="Official website and web panel: rgminer.net" src="https://img.shields.io/badge/Website-rgminer.net-ff743d?style=for-the-badge" /></a>
+  <a href="https://rgminer.net/"><img alt="Official website and web panel: rgminer.net" src="https://img.shields.io/badge/Website-rgminer.net-ff743d?style=for-the-badge" width="250" height="40" /></a><a href="https://t.me/rgpool"><img alt="Telegram: @rgpool" src="https://img.shields.io/badge/Telegram-@rgpool-229ED9?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" width="250" height="40" /></a>
 </p>
 
 <p align="center">
