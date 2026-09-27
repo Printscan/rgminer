@@ -1,0 +1,181 @@
+{
+  "generation": "v4",
+  "status": "all modules compiled; hardware validation pending",
+  "rank_upstream_commit": "cc35c8f4e2c21b6d4fe9f1b789254dc2ac11355e",
+  "tune_upstream_commit": "e12616794c8b55dd72db36d313f4c17a0aa50a04",
+  "drivers": {
+    "580.159.03": {
+      "blob_size": 17392336,
+      "blob_sha256": "89ab0c0aa5ffaa20a193b0b880384733e0bb04bf346987b6cf0085504b87c266",
+      "parent_v3_sha256": "761ee9c95a5de2994a220b024c238364fc5d2cf83226a0a0eee211ff46500f1a",
+      "encrypted_size": 17392480,
+      "encrypted_sha256": "901e41b15aa368da46a2745c227ffa3302b3caf6f31d82f399514b03edf0c70c",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "580.159.04": {
+      "blob_size": 17392592,
+      "blob_sha256": "cf6610e0bfd3076402df382b27bb5603e681ce4ba70a5e02d9afec91f35ccb57",
+      "parent_v3_sha256": "7a1dbb057adbef55a6437f55eda2131436fbc9f7e7b6126fcef1e39a9bffa772",
+      "encrypted_size": 17392736,
+      "encrypted_sha256": "2fe10f58a4d91aec2b50a2bb3d2439868c55f63e5db259f430161fac3cc71a4a",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "580.173.02": {
+      "blob_size": 17398952,
+      "blob_sha256": "3bb04e70da8a47a28d19b15d8f7c0bb8beaac07dd54f25664a530b461d547fed",
+      "parent_v3_sha256": "d4b33d49e12cbbe4f27a03fa411b4560aed22e2066d68a92e7c3129a61822ef4",
+      "encrypted_size": 17399096,
+      "encrypted_sha256": "21f2efdfb59b3cb9770acf360a18b9a1cb0b423e582dd870fcc3adb6f3634fe3",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "580.178.04": {
+      "blob_size": 17404328,
+      "blob_sha256": "3048c62794b811b7065af822219cdb3cc762ababf4d93c2ecd74966337925c0d",
+      "parent_v3_sha256": "cb61727641e3e8f0a8b666af81bf303561678aeccd6b387227fd7697a369e852",
+      "encrypted_size": 17404472,
+      "encrypted_sha256": "7c6f25c1fe37a86575dee9bcf4f5eac808daf8afd60ff92801e951a6cf5b903d",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "590.48.01": {
+      "blob_size": 17567624,
+      "blob_sha256": "31a5c5902bde5095bc00becd6dbe6d10393a17856b210f8c1646e465ccd95d1a",
+      "parent_v3_sha256": "67c9e06217facc875164613092a4487d26987851dc1d48da2f1651928ff4da64",
+      "encrypted_size": 17567768,
+      "encrypted_sha256": "47a1e340cbf5c6992a5f07b2f39eb4b161c8b6916e1d5e7531044d8c09579d5c",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "595.58.03": {
+      "blob_size": 17646760,
+      "blob_sha256": "85c49c415d3901d00259bbc1534d31d5653e125a8f523caa827c6558cf094147",
+      "parent_v3_sha256": "819943bced74492597b8b25001b063c0fe98e831b2393a52c15d29428b77d5c4",
+      "encrypted_size": 17646904,
+      "encrypted_sha256": "b066b5960f79d7c263dc50f1292a8e6b1e3f3abb9c8ad249d72ee67212484d2b",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "595.71.05": {
+      "blob_size": 17649872,
+      "blob_sha256": "ed66acb5b1038dc0ab1605e388fd9fcadc0903ac14656aa5a3adf320b9cb714a",
+      "parent_v3_sha256": "5be1b8af176deac707ba7d25017ea7254ec18263d9368b1128dfe8d561758a13",
+      "encrypted_size": 17650016,
+      "encrypted_sha256": "8735d044740ec2a24e9b58ee63fab80632e1cae1f544a3b50c10f40de8e602b1",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "595.80": {
+      "blob_size": 17654760,
+      "blob_sha256": "715e859ec7a867aca063f87f4172015d331a1ef9e55023c82eca57c01f02645f",
+      "parent_v3_sha256": "0f9b7a24846f8f9236cb728d3a1c903ac618805bbf5482defea49542038dcbdc",
+      "encrypted_size": 17654904,
+      "encrypted_sha256": "389e81183a10dff3afc942994134ef490a3ebe29b321bbda59e260669df4b17c",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "595.84": {
+      "blob_size": 17656752,
+      "blob_sha256": "d5aa68900cd390bcbe87d4cf4d651b0b8ac26f8ebb957643a3562744202038ce",
+      "parent_v3_sha256": "85fd69e69ae47aee655b435550ce6050b0c8829abef40a67ddaa36ccd9530f4c",
+      "encrypted_size": 17656896,
+      "encrypted_sha256": "a0a89a359c582d261cb216ce85df23cf78065e011baf4d3cd2be8585e11df2b6",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "595.91.07": {
+      "blob_size": 17666712,
+      "blob_sha256": "24be77ae8c27f78c0612b8df5027fdefdc130f1b27342173949469ae58e09e2b",
+      "parent_v3_sha256": "917f8d8caefbfe2612ff4e7c02715c285474ecd8b870768e87a7b06badc5fbc2",
+      "encrypted_size": 17666856,
+      "encrypted_sha256": "9e11b2ce8c867ad11c714c6d7fad827289eece3b676eee6f3e7c67fba089cab9",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    },
+    "610.43.03": {
+      "blob_size": 19306552,
+      "blob_sha256": "898e2e3d405e0aceef9c4972e61b0541b23213c29518a7c950d177a5b6f4af9f",
+      "parent_v3_sha256": "292ea8f324e70d5812837924059d7da5c37ed18d9e10697607a6fdc418ad0079",
+      "encrypted_size": 19306696,
+      "encrypted_sha256": "ec14e5caa3767716f93743cdff78748047a185b3f6889f3c1d176cabfbfd5037",
+      "non170_cmp_functions_verified": [
+        "_kgspCmp50ExecuteBooterFreshMeta",
+        "kgspCmp50GetExploitMode",
+        "kgspCmp50RebuildStockSignature",
+        "kgspCmp50SanitizeSec2AfterExploit",
+        "kgspCmp50SetExploitMode",
+        "kgspCmp90RestoreStockSignatureForBooter"
+      ]
+    }
+  },
+  "source_port_sha256": "80116c784212373c082c95bbef2131e40bb154fa6ad4eb4fe1ce5e6340d0523f",
+  "validation": {
+    "module_builds": 11,
+    "miner_decryptor_verified": 11,
+    "source_isolation_verified": 11,
+    "non170_cmp_function_comparison": "relocation targets and diagnostic line numbers normalized",
+    "hardware_validation": "pending"
+  }
+}
