@@ -15,12 +15,17 @@
 
 <a id="overview"></a>
 
-| Coin | `--algo` | Algorithm | Miner fee |
-|---|---|---|---:|
-| Pearl | `pearl` | PearlHash | 2% |
-| Quantus | `quantus` | Poseidon2 | 2% |
-| Nockchain | `nock-zk` | Nock-ZK | 2% |
-| EXFER | `exfer-argon2id` | Argon2id | 5% |
+<table align="center">
+  <thead>
+    <tr><th>Coin</th><th><code>--algo</code></th><th>Algorithm</th><th>Miner fee</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Pearl</td><td><code>pearl</code></td><td>PearlHash</td><td>2%</td></tr>
+    <tr><td>Quantus</td><td><code>quantus</code></td><td>Poseidon2</td><td>2%</td></tr>
+    <tr><td>Nockchain</td><td><code>nock-zk</code></td><td>Nock-ZK</td><td>2%</td></tr>
+    <tr><td>EXFER</td><td><code>exfer-argon2id</code></td><td>Argon2id</td><td>5%</td></tr>
+  </tbody>
+</table>
 
 <a id="performans"></a>
 
