@@ -15,7 +15,7 @@
 
 <a id="overview"></a>
 
-<table align="center">
+<table align="center" width="100%">
   <thead>
     <tr><th>Coin</th><th><code>--algo</code></th><th>Algorithm</th><th>Miner fee</th></tr>
   </thead>
