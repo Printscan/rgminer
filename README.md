@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.1.1-2ea44f"></a>
+  <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.1.2-2ea44f"></a>
   <a href="#download"><img alt="Platforms" src="https://img.shields.io/badge/platforms-Linux%20%7C%20Windows%20%7C%20Docker-blue"></a>
   <a href="#overview"><img alt="GPU" src="https://img.shields.io/badge/GPU-NVIDIA-76b900"></a>
   <a href="#cli-options"><img alt="CUDA" src="https://img.shields.io/badge/backend-CUDA-76b900"></a>
@@ -29,7 +29,7 @@
 
 <a id="performans"></a>
 
-## PERFORMANCE / ПРОИЗВОДИТЕЛЬНОСТЬ / 性能
+## PERFORMANCE / ПРОИЗВОДИТЕЛЬНОСТЬ
 
 <details>
 <summary><strong>Pearl</strong></summary>
@@ -40,16 +40,16 @@
 | CMP 40HX | **52.60** | **139.12** | 255 | 1650 | 5000 | — | **0.378** |
 | RTX 2080 | **75.47** | **178.59** | 135 | 1650 | 5000 | — | **0.423** |
 | CMP 50HX | **90.50** | **220.88** | 255 | 1650 | 5000 | — | **0.410** |
-| CMP 70HX | **46.30** | **139.08** | 255 | 1650 | — | -2000 | **0.333** |
-| RTX 3060 Ti | **61.96** | **130.85** | 255 | 1650 | 5000 | — | **0.474** |
-| RTX 3070m | **65.70** | **118.95** | 255 | 1650 | 6000 | — | **0.552** |
-| RTX 3070 | **75.50** | **146.40** | 255 | 1650 | 5000 | — | **0.516** |
-| CMP 90HX | **70.90** | **184.83** | 300 | 1650 | — | -2000 | **0.384** |
-| RTX 3080 Ti | **129.50** | **274.50** | 255 | 1650 | 5000 | — | **0.472** |
-| CMP 170HX | **175.00** | **187.58** | 300 | 1455 | — | 0 | **0.933** |
-| RTX 4070 Ti | **146.50** | **174** | 345 | 2445 | 5000 | — | **0.842** |
-| RTX 4090 | **298.05** | **340.40** | 315 | 2445 | 5000 | — | **0.876** |
-| RTX 5070 Ti | **171.40** | **192.10** | 480 | 2445 | 7000 | — | **0,892** |
+| CMP 70HX | **46.90** | **142.58** | 255 | 1650 | — | -2000 | **0.329** |
+| RTX 3060 Ti | **62.12** | **130.85** | 255 | 1650 | 5000 | — | **0.475** |
+| RTX 3070m | **65.84** | **118.95** | 255 | 1650 | 6000 | — | **0.554** |
+| RTX 3070 | **75.69** | **146.40** | 255 | 1650 | 5000 | — | **0.517** |
+| CMP 90HX | **71.80** | **189.83** | 300 | 1650 | — | -2000 | **0.378** |
+| RTX 3080 Ti | **130.30** | **274.50** | 255 | 1650 | 5000 | — | **0.475** |
+| CMP 170HX | **185.00** | **209.58** | 300 | 1455 | — | 0 | **0.883** |
+| RTX 4070 Ti | **145.50** | **162** | 345 | 2445 | 5000 | — | **0.898** |
+| RTX 4090 | **296.05** | **308.40** | 315 | 2445 | 5000 | — | **0.960** |
+| RTX 5070 Ti | **171.40** | **177.10** | 480 | 2445 | 7000 | — | **0.968** |
 
 </details>
 
@@ -60,21 +60,21 @@
 |---|---:|---:|---:|---:|---:|---:|---:|
 | P104-100 | **49.06** | **87.94** | 150 | 1650 | — | -2000 | **0.558** |
 | CMP 100-100 | **68.44** | **189.7** | — | 1455 | 837 | — | **0.361** |
-| GTX 1660 Super | **138.89** | **63** | 150 | 1650 | 810 | 0 | **2.205** |
-| GTX 1660 Ti | **151.92** | **55** | 150 | 1650 | 810 | 0 | **2.762** |
-| RTX 2060 | **190.20** | **83** | 210 | 1650 | 810 | 0 | **2.292** |
-| RTX 2070 | **226.04** | **97** | 200 | 1650 | 810 | 0 | **2.330** |
-| RTX 2080 | **290.61** | **125** | 115 | 1650 | 810 | 0 | **2.325** |
-| CMP 50HX | **354.07** | **175** | 250 | 1650 | 5000 | 0 | **2.023** |
-| RTX 3060 Ti | **247.31** | **85** | 300 | 1650 | 810 | 0 | **2.910** |
-| RTX 3070m | **260.31** | **72** | 250 | 1650 | 810 | 0 | **3.615** |
-| RTX 3070 | **299.07** | **97** | 300 | 1650 | 810 | 0 | **3.083** |
-| RTX 3080 | **439.22** | **155** | 300 | 1650 | 810 | 0 | **2.834** |
-| RTX 3080 Ti | **514.64** | **179** | 300 | 1650 | 810 | 0 | **2.875** |
-| CMP 90HX | **325.46** | **173** | 300 | 1650 | — | -2000 | **1.881** |
-| RTX 4070 Ti | **574.73** | **145.5** | 300 | 2460 | 810 | 0 | **3.950** |
-| RTX 4090 | **1225.42** | **323** | 315 | 2460 | 810 | 0 | **3.794** |
-| RTX 5070 Ti | **644.50** | **165** | 499 | 2460 | 810 | 0 | **3.906** |
+| GTX 1660 Super | **140.42** | **64.51** | 150 | 1650 | 810 | 0 | **2.177** |
+| GTX 1660 Ti | **153.59** | **56.32** | 150 | 1650 | 810 | 0 | **2.727** |
+| RTX 2060 | **192.29** | **84.99** | 210 | 1650 | 810 | 0 | **2.263** |
+| RTX 2070 | **228.53** | **99.33** | 200 | 1650 | 810 | 0 | **2.301** |
+| RTX 2080 | **293** | **128** | 115 | 1650 | 810 | 0 | **2.289** |
+| CMP 50HX | **357.96** | **179.20** | 250 | 1650 | 5000 | 0 | **1.998** |
+| RTX 3060 Ti | **249.54** | **85** | 300 | 1650 | 810 | 0 | **2.936** |
+| RTX 3070m | **262.65** | **72** | 250 | 1650 | 810 | 0 | **3.648** |
+| RTX 3070 | **301.76** | **97** | 300 | 1650 | 810 | 0 | **3.111** |
+| RTX 3080 | **443.17** | **155** | 300 | 1650 | 810 | 0 | **2.859** |
+| RTX 3080 Ti | **519.27** | **179** | 300 | 1650 | 810 | 0 | **2.901** |
+| CMP 90HX | **328.39** | **173** | 300 | 1650 | — | -2000 | **1.898** |
+| RTX 4070 Ti | **578** | **150** | 300 | 2460 | 810 | 0 | **3.853** |
+| RTX 4090 | **1234.00** | **332.99** | 315 | 2460 | 810 | 0 | **3.706** |
+| RTX 5070 Ti | **646.43** | **165** | 499 | 2460 | 810 | 0 | **3.918** |
 
 </details>
 
@@ -107,7 +107,7 @@
 
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/0933e5a2-b114-4e75-a529-d2f904ba06f6"
+    src="https://github.com/user-attachments/assets/eee09018-fda1-411b-8df5-a53106e7e674"
     alt="rgminer"
     width="100%"
   />
@@ -129,7 +129,7 @@
         "algo": "pearlhash",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -144,7 +144,7 @@
 
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/a3675074-ec79-4904-89ed-91eb256765b8"
+    src="https://github.com/user-attachments/assets/47f3db3e-78ca-4ab0-a258-d2347c949b7a"
     alt="rgminer"
     width="100%"
   />
@@ -166,7 +166,7 @@
         "algo": "quantus",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -180,7 +180,7 @@
 <summary><strong>Nock-ZK</strong></summary>
 
 <div align="left">
-<img src="https://github.com/user-attachments/assets/59f9ca44-0228-4399-9a32-7f3e7d409ab7" alt="rgminer" width="50%" />
+<img src="https://github.com/user-attachments/assets/ce168909-4a32-4a59-b8f9-84b181cd9584" alt="rgminer" width="50%" />
 </div>
 
 ```json
@@ -198,7 +198,7 @@
         "url": "nl2.rabbitminer.cc:1108",
         "miner": "rgminer",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1-hiveos.tar.gz",
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-hiveos.tar.gz",
         "user_config":"--algo nock-zk"
       },
       "pool_geo": []
@@ -213,17 +213,17 @@
 
 | Platform | Release file |
 |---|---|
-| Linux standalone | [`rgminer-1.1.1`](https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1) |
-| Windows | [`rgminer-1.1.1-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1-windows.zip) |
-| HiveOS | [`rgminer-1.1.1-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1-hiveos.tar.gz) |
-| MMPOS | [`rgminer-1.1.1-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.1/rgminer-1.1.1-mmpos.tar.gz) |
-| Docker | [`palmatorro/rgminer:1.1.1`](https://hub.docker.com/r/palmatorro/rgminer) |
+| Linux standalone | [`rgminer-1.1.2`](https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2) |
+| Windows | [`rgminer-1.1.2-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-windows.zip) |
+| HiveOS | [`rgminer-1.1.2-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-hiveos.tar.gz) |
+| MMPOS | [`rgminer-1.1.2-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-mmpos.tar.gz) |
+| Docker | [`palmatorro/rgminer:1.1.2`](https://hub.docker.com/r/palmatorro/rgminer) |
 
 ---
 
 <a id="miner-settings"></a>
 
-## MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА / 矿工设置
+## MINER SETTINGS / НАСТРОЙКИ МАЙНЕРА
 <a id="english"></a>
 
 <details>
@@ -252,9 +252,9 @@
 Make the standalone Linux release executable and start it with an algorithm, pool and wallet:
 
 ```bash
-chmod +x rgminer-1.1.1
+chmod +x rgminer-1.1.2
 
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -264,7 +264,7 @@ chmod +x rgminer-1.1.1
 Several pools can be specified in priority order:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -273,7 +273,7 @@ Several pools can be specified in priority order:
 Use `stratum+tls://` or `--stratum-tls` to enable verified TLS:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -282,13 +282,13 @@ Use `stratum+tls://` or `--stratum-tls` to enable verified TLS:
 Docker installation and launch:
 
 ```bash
-docker pull palmatorro/rgminer:1.1.1
+docker pull palmatorro/rgminer:1.1.2
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.1.1 \
+  palmatorro/rgminer:1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -313,25 +313,25 @@ The host must have a working NVIDIA driver, Docker and `nvidia-container-toolkit
 Pearl example:
 
 ```bash
-./rgminer-1.1.1 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Quantus example (2% dev fee):
 
 ```bash
-./rgminer-1.1.1 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 Nockchain example (2% miner fee; [RabbitMiner](https://rabbitminer.cc/) pool fee 2.5%):
 
 ```bash
-./rgminer-1.1.1 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
+./rgminer-1.1.2 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
 ```
 
 EXFER example:
 
 ```bash
-./rgminer-1.1.1 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -340,7 +340,7 @@ EXFER example:
 
 ## CLI Options <sub><a href="#english-contents">↑ Back to contents</a></sub>
 
-The table below describes the `rgminer-1.1.1` command-line options.
+The table below describes the `rgminer-1.1.2` command-line options.
 
 ### Pool connection
 
@@ -370,7 +370,7 @@ The table below describes the `rgminer-1.1.1` command-line options.
 API example:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -387,7 +387,7 @@ API example:
 Open [rgminer.net](https://rgminer.net/) and create a registration token in your account. Add it to your normal mining command:
 
 ```bash
-./rgminer-1.1.1 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+./rgminer-1.1.2 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
 ```
 
 The official panel address and its server trust anchor are built into this release; no extra panel address is needed. The token is displayed only when created, so copy it then and keep it private. Mining without the panel does not require a token.
@@ -405,7 +405,7 @@ The protected release exposes a read-only JSON API on `127.0.0.1:9200` by defaul
 Change the listener address or port when starting the miner:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -491,7 +491,7 @@ Clock options use physical NVIDIA GPU indices and are applied through NVML. A va
 Multi-GPU example:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -531,13 +531,13 @@ CMP unlock options are available on Linux only. CMP 170HX unlocker v4 supports N
 ### Show release help
 
 ```bash
-./rgminer-1.1.1 --help
+./rgminer-1.1.2 --help
 ```
 
 ### Permission denied
 
 ```bash
-chmod +x rgminer-1.1.1
+chmod +x rgminer-1.1.2
 ```
 
 ### A GPU must not be used
@@ -545,13 +545,13 @@ chmod +x rgminer-1.1.1
 Select only the required CUDA indices:
 
 ```bash
-./rgminer-1.1.1 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### CMP handling must be disabled
 
 ```bash
-./rgminer-1.1.1 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Plain logs are required
@@ -601,9 +601,9 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 Сделайте standalone-файл исполняемым и запустите его, указав алгоритм, пул и кошелёк:
 
 ```bash
-chmod +x rgminer-1.1.1
+chmod +x rgminer-1.1.2
 
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -613,7 +613,7 @@ chmod +x rgminer-1.1.1
 Несколько резервных пулов указываются в порядке приоритета через запятую:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -622,7 +622,7 @@ chmod +x rgminer-1.1.1
 Для проверяемого TLS используйте `stratum+tls://` или `--stratum-tls`:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -631,13 +631,13 @@ chmod +x rgminer-1.1.1
 Установка и запуск через Docker:
 
 ```bash
-docker pull palmatorro/rgminer:1.1.1
+docker pull palmatorro/rgminer:1.1.2
 
 docker run -d \
   --gpus all \
   --restart unless-stopped \
   --name rgminer \
-  palmatorro/rgminer:1.1.1 \
+  palmatorro/rgminer:1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -662,25 +662,25 @@ docker run -d \
 Пример Pearl:
 
 ```bash
-./rgminer-1.1.1 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Пример Quantus (комиссия 2%):
 
 ```bash
-./rgminer-1.1.1 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 Пример Nockchain (комиссия майнера 2%; комиссия пула [RabbitMiner](https://rabbitminer.cc/) — 2,5%):
 
 ```bash
-./rgminer-1.1.1 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
+./rgminer-1.1.2 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
 ```
 
 Пример EXFER:
 
 ```bash
-./rgminer-1.1.1 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -689,7 +689,7 @@ docker run -d \
 
 ## Параметры запуска <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
 
-Ниже описаны параметры запуска `rgminer-1.1.1`.
+Ниже описаны параметры запуска `rgminer-1.1.2`.
 
 ### Подключение к пулу
 
@@ -719,7 +719,7 @@ docker run -d \
 Пример включения API:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -736,7 +736,7 @@ docker run -d \
 Откройте [rgminer.net](https://rgminer.net/) и создайте регистрационный токен в своём аккаунте. Добавьте его к обычной команде запуска:
 
 ```bash
-./rgminer-1.1.1 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+./rgminer-1.1.2 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
 ```
 
 Адрес официальной панели и ключ проверки сервера уже встроены в этот релиз — указывать отдельный адрес не нужно. Токен показывается только при создании: сразу сохраните его и никому не передавайте. Для майнинга без панели токен не требуется.
@@ -754,7 +754,7 @@ docker run -d \
 Адрес и порт можно изменить при запуске:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -840,7 +840,7 @@ curl -s http://127.0.0.1:9200/metrics |
 Пример для нескольких GPU:
 
 ```bash
-./rgminer-1.1.1 \
+./rgminer-1.1.2 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -880,13 +880,13 @@ curl -s http://127.0.0.1:9200/metrics |
 ### Показать справку релиза
 
 ```bash
-./rgminer-1.1.1 --help
+./rgminer-1.1.2 --help
 ```
 
 ### Ошибка Permission denied
 
 ```bash
-chmod +x rgminer-1.1.1
+chmod +x rgminer-1.1.2
 ```
 
 ### Нужно исключить GPU
@@ -894,13 +894,13 @@ chmod +x rgminer-1.1.1
 Укажите только необходимые CUDA-индексы:
 
 ```bash
-./rgminer-1.1.1 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Нужно отключить обработку CMP
 
 ```bash
-./rgminer-1.1.1 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.2 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Нужен обычный текстовый лог
@@ -919,354 +919,5 @@ chmod +x rgminer-1.1.1
 - [Репозиторий](https://github.com/Printscan/rgminer)
 
 При сообщении об ошибке укажите имя релизного файла, модель GPU, версию драйвера NVIDIA, операционную систему, полную команду без кошелька и относящийся к проблеме фрагмент лога.
-
-</details>
-
-<a id="chinese"></a>
-
-<details>
-<summary><strong>中文</strong></summary>
-
-<a id="chinese-contents"></a>
-
-## 目录
-
-- [快速开始](#zh-quick-start)
-- [算法](#zh-algorithms)
-- [命令行参数](#zh-cli-options)
-- [网页面板](#zh-web-panel)
-- [矿工 API](#zh-miner-api)
-- [超频设置](#zh-overclock)
-- [CMP 参数](#zh-cmp-options)
-- [故障排除](#zh-troubleshooting)
-- [资源](#zh-resources)
-
----
-
-<a id="zh-quick-start"></a>
-
-## 快速开始 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-赋予 Linux 独立版可执行权限，然后指定算法、矿池和钱包启动：
-
-```bash
-chmod +x rgminer-1.1.1
-
-./rgminer-1.1.1 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --worker-name WORKER
-```
-
-可按优先顺序使用逗号指定多个备用矿池：
-
-```bash
-./rgminer-1.1.1 \
-  --algo pearl \
-  --stratum HOST1:PORT1,HOST2:PORT2 \
-  --wallet WALLET
-```
-
-使用 `stratum+tls://` 或 `--stratum-tls` 启用经过证书验证的 TLS：
-
-```bash
-./rgminer-1.1.1 \
-  --algo pearl \
-  --stratum stratum+tls://HOST:PORT \
-  --wallet WALLET
-```
-
-通过 Docker 安装并运行：
-
-```bash
-docker pull palmatorro/rgminer:1.1.1
-
-docker run -d \
-  --gpus all \
-  --restart unless-stopped \
-  --name rgminer \
-  palmatorro/rgminer:1.1.1 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --worker-name docker-rig
-```
-
-主机必须安装可用的 NVIDIA 驱动、Docker 和 `nvidia-container-toolkit`。
-
----
-
-<a id="zh-algorithms"></a>
-
-## 算法 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-| `--algo` 参数值 | 用途 | 开发者费用 |
-|---|---|---|
-| `pearl` | Pearl GPU 挖矿 | 2% |
-| `quantus` | Quantus GPU 挖矿 | 2% |
-| `nock-zk` | 通过 RabbitMiner 挖掘 Nockchain v5 | 2% |
-| `exfer`、`exfer-argon2id` | EXFER Argon2id Stratum 挖矿 | 5% |
-
-Pearl 示例：
-
-```bash
-./rgminer-1.1.1 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-Quantus 示例（开发者费用 2%）：
-
-```bash
-./rgminer-1.1.1 --algo quantus --stratum HOST:PORT --wallet WALLET
-```
-
-Nockchain 示例（矿机手续费 2%；[RabbitMiner](https://rabbitminer.cc/) 矿池手续费另为 2.5%）：
-
-```bash
-./rgminer-1.1.1 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
-```
-
-EXFER 示例：
-
-```bash
-./rgminer-1.1.1 --algo exfer-argon2id --stratum HOST:PORT --wallet WALLET
-```
-
----
-
-<a id="zh-cli-options"></a>
-
-## 命令行参数 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-下表介绍 `rgminer-1.1.1` 的命令行参数。
-
-### 矿池连接
-
-| 参数 | 说明 |
-|---|---|
-| `--algo ALGO` | 选择 `pearl`、`quantus`、`nock-zk`、`exfer-argon2id` 或别名 `exfer`。 |
-| `--stratum HOST:PORT[,HOST:PORT]` | 单个矿池地址或按优先级排列的矿池列表。其他算法支持 `stratum+tls://`；Nock-ZK 使用 TCP。 |
-| `--proto rabbit` | Nock-ZK 使用的 RabbitMiner 矿池协议；该算法默认选择此协议。 |
-| `--wallet WALLET`、`--address WALLET` | 收款钱包或矿池用户名。 |
-| `--worker NAME`、`--worker-name NAME` | 工人或矿机名称。 |
-| `--stratum-pass PASS` | 矿池密码。 |
-| `--stratum-tls` | 强制使用并验证 TLS 证书。 |
-| `--proto NAME` | 选择非默认 Pearl 矿池协议：`alphapool`、`herominers`、`kryptex`、`f2pool`、`pearlfortune` 或 `suprnova`。省略该参数时自动使用 AkoyaV2。 |
-
-### GPU、API 与安全
-
-| 参数 | 说明 |
-|---|---|
-| `-d GPU[,GPU]`、`--devices GPU[,GPU]` | 选择 CUDA 设备索引。 |
-| `--token TOKEN` | 将矿机接入官方网页面板账户；面板地址已内置。 |
-| `--api-host HOST` | API 监听地址，与 `--api-port` 一起使用。 |
-| `--api-port PORT` | API 监听端口，与 `--api-host` 一起使用。 |
-| `--plain-console` | 禁用实时控制台界面并输出普通日志。 |
-| `--watchdog=off`、`--watchdog=restart`、`--watchdog=reboot` | CUDA 错误后选择不恢复、重启矿工或重启矿机。 |
-| `--tune-fan-fix [0-100]` | autotune 期间将风扇固定在指定百分比；不带数值时使用 100%。 |
-
-API 示例：
-
-```bash
-./rgminer-1.1.1 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --api-host 127.0.0.1 \
-  --api-port 9200
-```
-
----
-
-<a id="zh-web-panel"></a>
-
-## 网页面板 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-打开 [rgminer.net](https://rgminer.net/)，在账户中创建注册令牌，然后将其加入平时的挖矿启动命令：
-
-```bash
-./rgminer-1.1.1 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
-```
-
-本版本已内置官方面板地址及服务器信任锚，无须另行指定面板地址。令牌仅在创建时显示，请立即妥善保存，切勿泄露。不使用面板挖矿时，无须提供令牌。
-
-面板可查看矿机状态、GPU 实时遥测数据及算力历史；可修改算法、钱包、矿工名称、矿池和 watchdog，并批量应用 GPU 配置文件及各显卡设置。还可使用当前可用的矿工启动、停止和重启命令。矿机离线时也能撤销其面板访问权限。
-
----
-
-<a id="zh-miner-api"></a>
-
-## 矿工 API <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-受保护的发行版默认在 `127.0.0.1:9200` 提供只读 JSON API。启动器会汇总所有已选择 GPU 和 CUDA 后端进程的统计信息。
-
-启动矿工时可以修改监听地址或端口：
-
-```bash
-./rgminer-1.1.1 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --api-host 127.0.0.1 \
-  --api-port 9200
-```
-
-### 接口
-
-| 请求 | 响应 |
-|---|---|
-| `GET /health` | API 状态和当前已发布的 GPU 记录数量。 |
-| `GET /metrics` | 每张 GPU 的详细 JSON 统计信息。 |
-
-```bash
-curl -s http://127.0.0.1:9200/health
-curl -s http://127.0.0.1:9200/metrics
-```
-
-`/health` 返回：
-
-```json
-{"status":"ok","running":1}
-```
-
-在受保护的发行版中，`running` 表示启动器当前聚合指标快照中的 GPU 记录数量。它说明 API 数据可用，但不能单独证明矿池已连接、算力大于零或已有已接受份额。
-
-`/metrics` 返回一个 `miners` 数组。每个 GPU 对象包含：
-
-| 字段 | 含义 |
-|---|---|
-| `deviceId`, `deviceIdScope`, `gpuName`, `pciBusId`, `pid` | 物理 GPU 和后端进程标识。 |
-| `lastJobId`, `lastHeight`, `algo` | 当前挖矿任务和算法。 |
-| `emaRate` | 原始 `H/s` 单位的平滑算力。除以 `1e12` 可换算为 `TH/s`。 |
-| `lastChecked`, `lastStatus`, `lastError` | 当前工作计数器、状态和最近错误。 |
-| `acceptedShares`, `rejectedShares`, `staleShares`, `foundBlocks` | 份额与区块计数器。 |
-| `lastDifficulty` | 最近发布的难度。 |
-| `totalChecked`, `totalElapsedMs` | 累计工作量和计算耗时。 |
-| `lastUpdated`, `processUptimeMs` | Unix 更新时间和进程运行时间，单位均为毫秒。 |
-
-显示常用字段：
-
-```bash
-curl -s http://127.0.0.1:9200/metrics |
-  jq '.miners[] | {
-    deviceId,
-    gpuName,
-    emaRate,
-    lastStatus,
-    acceptedShares,
-    rejectedShares
-  }'
-```
-
-计算总算力（单位 `H/s`）：
-
-```bash
-curl -s http://127.0.0.1:9200/metrics |
-  jq '[.miners[].emaRate] | add // 0'
-```
-
-API 只支持 `GET`。未知路径返回 `404`，其他方法返回 `405`；一秒内超过 100 个请求时可能返回 `429` 和 `Retry-After: 1`。
-
-> [!WARNING]
-> API 不提供身份验证或 TLS。建议保留默认的 `127.0.0.1` 绑定。只有在防火墙、带身份验证的反向代理或 VPN 后方才应将 API 暴露到网络。
-
----
-
-<a id="zh-overclock"></a>
-
-## 超频设置 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-频率参数使用 NVIDIA GPU 的物理索引，并通过 NVML 应用。不带 GPU 编号的数值应用于所有 GPU，带编号的数值覆盖指定 GPU 的值。固定频率未指定 offset 时自动使用零 offset。
-
-| 参数 | 说明 |
-|---|---|
-| `--cclock OFFSET[,GPU:OFFSET]` | 核心频率偏移，单位 MHz。 |
-| `--mclock OFFSET[,GPU:OFFSET]` | 显存传输频率偏移，单位 MHz。 |
-| `--lock-cclock MHz[,GPU:MHz]` | 将核心频率锁定到绝对值。 |
-| `--lock-mclock MHz[,GPU:MHz]` | 将显存频率锁定到绝对值。 |
-| `--pl WATTS[,GPU:WATTS]` | 通过 NVML 设置 NVIDIA GPU 功耗限制，单位为瓦特（Linux 和 Windows）。 |
-
-多 GPU 示例：
-
-```bash
-./rgminer-1.1.1 \
-  --algo pearl \
-  --stratum HOST:PORT \
-  --wallet WALLET \
-  --cclock 0:125,1:250 \
-  --mclock 0:500,1:1000 \
-  --lock-cclock 0:1650,1:2450 \
-  --lock-mclock 0:7000,1:7000 \
-  --pl 0:180,1:220
-```
-
-在 CMP 170HX 上，`--lock-mclock` 和 WebUI 还可控制 HBM2 显存寄存器。可应用的最低安全显存频率为 **525 MHz**。修改频率需要足够的 NVIDIA 驱动权限。请从保守参数开始，并逐张验证 GPU。
-
----
-
-<a id="zh-cmp-options"></a>
-
-## CMP 参数 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-| 参数 | 说明 |
-|---|---|
-| `--cmp-unlock` | 明确安装或重新启用 CMP 解锁。 |
-| `--cmp-unlock-force` | 禁用第三方 NVIDIA 驱动覆盖并安装 CMP 解锁。 |
-| `--no-cmp-unlock` | 禁用 CMP 解锁处理。 |
-| `--no-cmp-unlock-update` | 保留当前已安装的 CMP 补丁版本，不执行更新。 |
-| `--cmp-blob-source SOURCE` | 指定 HTTPS 基础地址或确切的 CMP blob 文件。 |
-| `--cmp-unlock-uninstall` | 恢复打补丁前保存的 NVIDIA 模块并重启系统。 |
-| `--unlock-level-map MAP` | 按 PCI BDF 设置 CMP 解锁级别：`BDF=N[,BDF=N]`。 |
-
-CMP 解锁参数仅适用于 Linux。CMP 170HX 解锁程序 v4 支持 NVIDIA 驱动 **610.43.02**、**610.57.04** 和 **615.71.09**。更新矿机时会自动启动解锁程序更新。如果要保留已安装的自定义解锁程序，请使用 `--no-cmp-unlock` 启动。可用时会自动使用 CMP blob 下载镜像。
-
----
-
-<a id="zh-troubleshooting"></a>
-
-## 故障排除 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-### 显示发行版帮助
-
-```bash
-./rgminer-1.1.1 --help
-```
-
-### Permission denied 错误
-
-```bash
-chmod +x rgminer-1.1.1
-```
-
-### 不使用某张 GPU
-
-仅选择需要的 CUDA 设备索引：
-
-```bash
-./rgminer-1.1.1 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-### 禁用 CMP 处理
-
-```bash
-./rgminer-1.1.1 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
-```
-
-### 需要普通文本日志
-
-添加 `--plain-console` 以禁用实时终端界面。
-
----
-
-<a id="zh-resources"></a>
-
-## 资源 <sub><a href="#chinese-contents">↑ 返回目录</a></sub>
-
-- [官方网站与网页面板](https://rgminer.net/)
-- [发行版](https://github.com/Printscan/rgminer/releases)
-- [问题反馈](https://github.com/Printscan/rgminer/issues)
-- [代码仓库](https://github.com/Printscan/rgminer)
-
-反馈问题时，请提供发行文件名、GPU 型号、NVIDIA 驱动版本、操作系统、移除钱包后的完整命令以及相关日志片段。
 
 </details>
