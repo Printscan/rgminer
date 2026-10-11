@@ -208,7 +208,7 @@
 | Platform | Release file |
 |---|---|
 | Linux standalone | [`rgminer-1.1.3b`](https://github.com/Printscan/rgminer/releases/download/v1.1.3b/rgminer-1.1.3b) |
-| Windows | [`rgminer-1.1.3b-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-windows.zip) |
+| Windows | [`rgminer-1.1.2-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.1.2/rgminer-1.1.2-windows.zip) |
 | HiveOS | [`rgminer-1.1.3b-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.3b/rgminer-1.1.3b-hiveos.tar.gz) |
 | MMPOS | [`rgminer-1.1.3b-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.3b/rgminer-1.1.3b-mmpos.tar.gz) |
 | Docker | [`palmatorro/rgminer:1.1.3b`](https://hub.docker.com/r/palmatorro/rgminer) |
