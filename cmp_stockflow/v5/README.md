@@ -1,11 +1,9 @@
-# cmp 30-90 810 mem mhz unlock
+# CMP v5 RM blobs
 
-v5 RM blobs for rgminer, supporting CMP 30HX, 40HX, 50HX, 70HX and 90HX with an 810 MHz memory floor and the RM NoCMP patch.
+Encrypted exact-driver RM blobs for rgminer: CMP30HX, CMP40HX, CMP50HX, CMP70HX and CMP90HX memory-floor policy plus RM NoCMP; CMP170HX keeps its existing policy. SHA256SUMS identifies every encrypted container.
 
-Each driver directory contains `nv-kernel.o_binary.enc` in the format consumed by the miner. Use the file matching the exact NVIDIA driver version. `SHA256SUMS` lists the encrypted file hashes.
+CMP70HX and CMP90HX paired 405/810 MHz clock entries are derived from each card's own BIT C / DRAM / program / working tables. CMP90HX no longer requires an exact BIOS version or whole-ROM byte identity. Structural, pointer, range, ownership and checksum validation remain enabled. The memory patch has not been disabled; idle/high clocks, timing tables, voltage equations and unused CMP90 rail records are preserved.
 
-CMP 70HX is selected by PCI Device ID `0x248A` only. Its paired 405/810 MHz clock entries are derived from the card's own ROM; there is no board, BIOS version or whole-ROM hash pin. Unsupported ROM layouts retain stock settings.
+Validation: all 14 supported driver containers passed native miner decryption, exact plaintext comparison and NoCMP idempotence checks. The corrected 595.91.07 blob was physically tested on four CMP90HX cards: initialization and actual 810 MHz memory succeeded with BIOS 94.02.74.00.07; all eight GPUs in the mixed rig enumerated through NVML. Full CUDA/Pearl mining validation remains unverified. This is not hardware validation of every driver release or GPU model.
 
-CMP 170HX also requires v5 for RM NoCMP during miner installation and updates, even with automatic patch updates disabled. Its HBM policy is unchanged.
-
-The 595.91.07 CMP 70HX blob was tested on two cards at 810 MHz with a 60-second CUDA memory-pattern check per card and no errors. All 14 driver artifacts passed the miner's native decryption and byte-for-byte verification; this is not a hardware test of all driver versions.
+Use a miner containing the matching updated v5 descriptor catalog (release sequence 2026110313 or newer catalog). Older miners with pinned previous plaintext hashes reject these replaced artifacts; updating only the remote blob cannot update an old binary's embedded catalog.
