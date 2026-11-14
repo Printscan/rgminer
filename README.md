@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.1.5-2ea44f"></a>
+  <a href="https://github.com/Printscan/rgminer/releases"><img alt="Release" src="https://img.shields.io/badge/release-v1.1.6-2ea44f"></a>
   <a href="#download"><img alt="Platforms" src="https://img.shields.io/badge/platforms-Linux%20%7C%20Windows%20%7C%20Docker-blue"></a>
   <a href="#overview"><img alt="GPU" src="https://img.shields.io/badge/GPU-NVIDIA-76b900"></a>
   <a href="#cli-options"><img alt="CUDA" src="https://img.shields.io/badge/backend-CUDA-76b900"></a>
@@ -40,21 +40,21 @@
 
 | GPU | Hashrate, TH/s | Power, W | Core Offset | Core, MHz | Memory, MHz | Mem offset | Efficiency, TH/s/W |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Tesla V100-SXM2-16GB | **≈37.85** | **215†** | — | 1350 | — | — | **≈0.176** |
-| CMP 40HX | **≈52.91** | **≈122.82–128.78** | 255 | 1650 | 5000 | — | **≈0.411–0.431** |
-| RTX 2080 | **≈76.50** | **≈156.36–163.95** | 135 | 1650 | 5000 | — | **≈0.467–0.489** |
-| CMP 50HX | **≈91.26** | **≈191.39–200.68** | 255 | 1650 | 5000 | — | **≈0.455–0.477** |
-| CMP 70HX | **≈56.20** | **≈110.73–111.76** | 255 | 1650 | 405 | —  | **≈0.503–0.508** |
-| RTX 3060 Ti | **≈63.55** | **≈82.74–86.75** | 255 | 1650 | 405 | — | **≈0.733–0.768** |
-| RTX 3070m | **≈66.99** | **≈79.02–82.85** | 255 | 1650 | 405 | — | **≈0.809–0.848** |
-| RTX 3070 | **≈77.01** | **≈97.89–102.64** | 255 | 1650 | 405 | — | **≈0.750–0.787** |
-| CMP 90HX | **≈83.29** | **≈110.04–120.71** | 300 | 1650 | 405 | —  | **≈0.690–0.757** |
-| RTX 3080 Ti | **≈133.73** | **≈174.12–182.57** | 255 | 1650 | 810 | — | **≈0.732–0.768** |
-| RTX 3090 | **≈136.64** | **≈185.93–194.95** | 255 | 1650 | 810 | — | **≈0.701–0.735** |
+| Tesla V100-SXM2-16GB | **≈37.85** | **215†** | — | 1350 | 405 | — | **≈0.176** |
+| CMP 40HX | **≈52.91** | **≈108.08–113.33** | 255 | 1716 | 405 | — | **≈0.467–0.490** |
+| RTX 2080 | **≈76.50** | **≈139.59–146.28** | 135 | 1716 | 405 | — | **≈0.530–0.556** |
+| CMP 50HX | **≈91.26** | **≈168.43–176.60** | 255 | 1716 | 405 | — | **≈0.517–0.542** |
+| CMP 70HX | **≈56.50** | **≈104.57–105.54** | 255 | 1650 | 405 | — | **≈0.535–0.540** |
+| RTX 3060 Ti | **≈63.89** | **≈78.14–81.93** | 255 | 1650 | 405 | — | **≈0.780–0.818** |
+| RTX 3070m | **≈67.35** | **≈74.63–78.24** | 255 | 1650 | 405 | — | **≈0.861–0.902** |
+| RTX 3070 | **≈77.42** | **≈92.45–96.93** | 255 | 1650 | 405 | — | **≈0.799–0.837** |
+| CMP 90HX | **≈83.73** | **≈103.92–114.00** | 300 | 1650 | 405 | — | **≈0.735–0.806** |
+| RTX 3080 Ti | **≈134.44** | **≈164.44–172.42** | 255 | 1650 | 405 | — | **≈0.780–0.818** |
+| RTX 3090 | **≈137.36** | **≈175.59–184.11** | 255 | 1650 | 405 | — | **≈0.746–0.782** |
 | CMP 170HX | **≈210.74** | **≈224.83–242.29** | 300 | 1455 | 600 | — | **≈0.870–0.937** |
-| RTX 4070 Ti | **≈149.60** | **≈117.67–125.14** | 345 | 2445 | 405 | — | **≈1.195–1.271** |
-| RTX 4090 | **≈317.7** | **≈267.83–280.83** | 315 | 2445 | 405 | — | **≈1.131–1.186** |
-| RTX 5070 Ti | **≈173.91** | **≈141.67–148.54** | 499 | 2445 | 405 | — | **≈1.171–1.228** |
+| RTX 4070 Ti | **≈150.12** | **≈114.41–121.67** | 345 | 2445 | 405 | — | **≈1.234–1.312** |
+| RTX 4090 | **≈318.81** | **≈260.41–273.05** | 315 | 2445 | 405 | — | **≈1.168–1.224** |
+| RTX 5070 Ti | **≈173.91** | **≈133.17–139.63** | 499 | 2445 | 405 | — | **≈1.246–1.306** |
 
 </details>
 
@@ -65,22 +65,22 @@
 |---|---:|---:|---:|---:|---:|---:|---:|
 | P104-100 | **49.06†** | **87.94†** | 150 | 1650 | — | -2000 | **0.558†** |
 | CMP 100-100 | **68.44†** | **189.7†** | — | 1455 | 837 | — | **0.361†** |
-| GTX 1660 Super | **≈158.25** | **55.36†** | 150 | 1650 | 810 | — | **≈2.859** |
-| GTX 1660 Ti | **≈172.69** | **56.19†** | 150 | 1650 | 810 | — | **≈3.073** |
-| RTX 2060 | **≈215.43** | **80.20†** | 210 | 1650 | 810 | — | **≈2.686** |
-| RTX 2070 | **≈256.03** | **93.74†** | 200 | 1650 | 810 | — | **≈2.731** |
-| RTX 2080 | **≈328.26** | **120.80†** | 115 | 1650 | 810 | — | **≈2.717** |
-| CMP 50HX | **≈365.02** | **119.11†** | 250 | 1650 | 810 | — | **≈3.065** |
+| GTX 1660 Super | **≈158.25** | **55.36†** | 150 | 1650 | 405 | — | **≈2.858** |
+| GTX 1660 Ti | **≈172.69** | **56.19†** | 150 | 1650 | 405 | — | **≈3.073** |
+| RTX 2060 | **≈215.43** | **80.20†** | 210 | 1650 | 405 | — | **≈2.686** |
+| RTX 2070 | **≈256.03** | **93.74†** | 200 | 1650 | 405 | — | **≈2.731** |
+| RTX 2080 | **≈328.26** | **120.80†** | 115 | 1650 | 405 | — | **≈2.717** |
+| CMP 50HX | **≈401.02** | **119.11†** | 250 | 1650 | 405 | — | **≈2.371** |
 | RTX 3060 Ti | **≈279.35** | **85.00†** | 300 | 1650 | 405 | — | **≈3.286** |
 | RTX 3070m | **≈294.15** | **67.00†** | 250 | 1650 | 405 | — | **≈4.390** |
 | RTX 3070 | **≈337.94** | **90.26†** | 300 | 1650 | 405 | — | **≈3.744** |
 | RTX 3080 | **≈496.31** | **144.24†** | 300 | 1650 | 405 | —  | **≈3.441** |
 | RTX 3080 Ti | **≈581.55** | **166.57†** | 300 | 1650 | 405 | —  | **≈3.491** |
 | CMP 90HX | **≈366.74** | **165.99†** | 300 | 1650 | 405 | —  | **≈2.209** |
-| CMP 170HX | **≈461.52** | **141.78†** | 210 | 1450 | 600 | — | **≈3.255** |
+| CMP 170HX | **≈461.52** | **141.78†** | 210 | 1450 | 600 | — | **≈3.072** |
 | RTX 4070 Ti | **≈652.92** | **138.03†** | 300 | 2460 | 405 | — | **≈4.730** |
 | RTX 4090 | **≈1393.95** | **294.11†** | 315 | 2460 | 405 | — | **≈4.740** |
-| RTX 5070 Ti | **≈753.90** | **154†** | 499 | 2460 | 810 | — | **≈4.895** |
+| RTX 5070 Ti | **≈753.90** | **154†** | 499 | 2460 | 405 | — | **≈4.895** |
 
 </details>
 
@@ -89,17 +89,17 @@
 
 | GPU | Hashrate, MH/s | Power, W | Core Offset | Core, MHz | Memory, MHz | Mem offset | Efficiency, MH/s/W |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| RTX 2080 | **24.65†** | **155.13†** | 115 | 1650 | 5000 | —  | **0.159†** |
-| CMP 50HX | **29.18†** | **198.63†** | 250 | 1650 | 5000 | —  | **0.147†** |
-| RTX 3060 Ti | **20.33†** | **124.64†** | 300 | 1650 | 810 | —  | **0.163†** |
-| RTX 3070m | **21.42†** | **76.09†** | 250 | 1650 | 5000 | —  | **0.282†** |
-| RTX 3070 | **24.62†** | **129.90†** | 300 | 1650 | 5000 | —  | **0.190†** |
-| RTX 3080 Ti | **42.83†** | **236.61†** | 300 | 1650 | 5000 | —  | **0.181†** |
-| CMP 90HX | **26.62†** | **176.31†** | 300 | 1650 | 5000 | —  | **0.151†** |
-| RTX 4070 Ti | **47.33†** | **148.45†** | 300 | 2460 | 5000 | —  | **0.319†** |
-| RTX 4090 | **100.07†** | **304.23†** | 315 | 2460 | 5000 | —  | **0.329†** |
-| RTX 5070 Ti | **61.86†** | **191.16†** | 499 | 2460 | 5000 | —  | **0.324†** |
-| CMP 170HX | **34.01** | **150** | 200 | 1450 | 1200 | — | **0.227** |
+| RTX 2080 | **24.65†** | **155.13†** | 115 | 1650 | 5000 | 0 | **0.159†** |
+| CMP 50HX | **29.18†** | **198.63†** | 250 | 1650 | 5000 | 0 | **0.147†** |
+| RTX 3060 Ti | **20.33†** | **124.64†** | 300 | 1650 | 5000 | 0 | **0.163†** |
+| RTX 3070m | **21.42†** | **76.09†** | 250 | 1650 | 5000 | 0 | **0.282†** |
+| RTX 3070 | **24.62†** | **129.90†** | 300 | 1650 | 5000 | 0 | **0.190†** |
+| RTX 3080 Ti | **42.83†** | **236.61†** | 300 | 1650 | 5000 | 0 | **0.181†** |
+| CMP 90HX | **26.62†** | **176.31†** | 300 | 1650 | — | -2000 | **0.151†** |
+| RTX 4070 Ti | **47.33†** | **148.45†** | 300 | 2460 | 5000 | 0 | **0.319†** |
+| RTX 4090 | **100.07†** | **304.23†** | 315 | 2460 | 5000 | 0 | **0.329†** |
+| RTX 5070 Ti | **61.86†** | **191.16†** | 499 | 2460 | 5000 | 0 | **0.324†** |
+| CMP 170HX | **34.01** | **150** | — | 1450 | 800 | — | **0.227** |
 
 </details>
 
@@ -108,11 +108,11 @@
 
 | GPU | Hashrate, MH/s | Power, W | Core Offset | Core, MHz | Memory, MHz | Mem offset | Efficiency, MH/s/W |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| RTX 3070m | **40.234** | **72.23** | 200  | 1650 | 405 | — | **0.557** |
-| RTX 4070 Ti | **92.4** | **147** | 300 | 2460 | 405 | — | **0.629** |
-| RTX 5080 | **139.45** | **225.67** | 499 | 2647 | 405 | — | **0.618** |
-| RTX 2080 | **18.31** | **110** | 150 | 1650 | 810 | — | **0.166** |
-| CMP 170HX | **97.5** | **140** | 200 | 1450 | 600 | — | **0.696** |
+| RTX 3070m | **40.234** | **72.23** | — | 1650 | 405 | — | **0.557** |
+| RTX 4070 Ti | **92.4** | **147** | — | 2460 | 405 | — | **0.629** |
+| RTX 5080 | **139.45** | **225.67** | — | 2647 | 405 | — | **0.618** |
+| RTX 2080 | **18.31** | **110** | — | 1650 | 405 | — | **0.166** |
+| CMP 170HX | **97.5** | **140** | — | 1450 | 600 | — | **0.696** |
 
 </details>
 
@@ -134,13 +134,13 @@
       "pool_ssl": false,
       "dpool_ssl": false,
       "miner": "custom",
-      "miner_alt": "rgminer-1.1.5",
+      "miner_alt": "rgminer-1.1.6",
       "miner_config": {
         "url": "YOUR_POOL",
         "algo": "pearlhash",
-        "miner": "rgminer-1.1.5",
+        "miner": "rgminer-1.1.6",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -162,13 +162,13 @@
       "pool_ssl": false,
       "dpool_ssl": false,
       "miner": "custom",
-      "miner_alt": "rgminer-1.1.5",
+      "miner_alt": "rgminer-1.1.6",
       "miner_config": {
         "url": "YOUR_POOL",
         "algo": "quantus",
-        "miner": "rgminer-1.1.5",
+        "miner": "rgminer-1.1.6",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -190,13 +190,13 @@
       "pool_ssl": false,
       "dpool_ssl": false,
       "miner": "custom",
-      "miner_alt": "rgminer-1.1.5",
+      "miner_alt": "rgminer-1.1.6",
       "miner_config": {
         "url": "YOUR_POOL",
         "algo": "zkpow",
-        "miner": "rgminer-1.1.5",
+        "miner": "rgminer-1.1.6",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -218,13 +218,13 @@
       "pool_ssl": false,
       "dpool_ssl": false,
       "miner": "custom",
-      "miner_alt": "rgminer-1.1.5",
+      "miner_alt": "rgminer-1.1.6",
       "miner_config": {
         "url": "YOUR_POOL",
         "algo": "noid",
-        "miner": "rgminer-1.1.5",
+        "miner": "rgminer-1.1.6",
         "template": "%WAL%.%WORKER_NAME%",
-        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-hiveos.tar.gz"
+        "install_url": "https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-hiveos.tar.gz"
       },
       "pool_geo": []
     }
@@ -240,10 +240,10 @@
 
 | Platform | Release file |
 |---|---|
-| Linux standalone | [`rgminer-1.1.5`](https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5) |
-| Windows | [`rgminer-1.1.5-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-windows.zip) |
-| HiveOS | [`rgminer-1.1.5-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-hiveos.tar.gz) |
-| MMPOS | [`rgminer-1.1.5-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.5/rgminer-1.1.5-mmpos.tar.gz) |
+| Linux standalone | [`rgminer-1.1.6`](https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6) |
+| Windows | [`rgminer-1.1.6-windows.zip`](https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-windows.zip) |
+| HiveOS | [`rgminer-1.1.6-hiveos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-hiveos.tar.gz) |
+| MMPOS | [`rgminer-1.1.6-mmpos.tar.gz`](https://github.com/Printscan/rgminer/releases/download/v1.1.6/rgminer-1.1.6-mmpos.tar.gz) |
 | Docker | [`palmatorro/rgminer`](https://hub.docker.com/r/palmatorro/rgminer) |
 
 ---
@@ -260,7 +260,7 @@
 
 ## Contents
 
-- [New in 1.1.5](#whats-new)
+- [New in 1.1.6](#whats-new)
 - [Quick Start](#quick-start)
 - [Algorithms](#algorithms)
 - [CLI Options](#cli-options)
@@ -279,7 +279,7 @@
 
 <a id="whats-new"></a>
 
-## New in 1.1.5 <sub><a href="#english-contents">↑ Back to contents</a></sub>
+## New in 1.1.6 <sub><a href="#english-contents">↑ Back to contents</a></sub>
 
 ### Pearl / Pearlhash
 
@@ -329,9 +329,9 @@
 Make the standalone Linux release executable and start it with an algorithm, pool and wallet:
 
 ```bash
-chmod +x rgminer-1.1.5
+chmod +x rgminer-1.1.6
 
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -341,7 +341,7 @@ chmod +x rgminer-1.1.5
 Several pools can be specified in priority order:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -350,7 +350,7 @@ Several pools can be specified in priority order:
 Use `stratum+tls://` or `--stratum-tls` to enable verified TLS:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -390,25 +390,25 @@ Replace `TAG` with a published image tag from [Docker Hub](https://hub.docker.co
 Pearl example:
 
 ```bash
-./rgminer-1.1.5 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Quantus example (2% dev fee):
 
 ```bash
-./rgminer-1.1.5 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 Nockchain example (2% miner fee; [RabbitMiner](https://rabbitminer.cc/) pool fee 2.5%):
 
 ```bash
-./rgminer-1.1.5 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
+./rgminer-1.1.6 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
 ```
 
 NOID example (Suprnova, InnovLab or RPlant; 2% dev fee):
 
 ```bash
-./rgminer-1.1.5 --algo noid --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --algo noid --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -417,7 +417,7 @@ NOID example (Suprnova, InnovLab or RPlant; 2% dev fee):
 
 ## CLI Options <sub><a href="#english-contents">↑ Back to contents</a></sub>
 
-The table below describes the `rgminer-1.1.5` command-line options.
+The table below describes the `rgminer-1.1.6` command-line options.
 
 ### Pool connection
 
@@ -498,7 +498,7 @@ Smart tuning allows deeper undervolting, particularly on **RTX 20, RTX 40 and RT
 API example:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -515,7 +515,7 @@ API example:
 Open [rgminer.net](https://rgminer.net/) and create a registration token in your account. Add it to your normal mining command:
 
 ```bash
-./rgminer-1.1.5 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+./rgminer-1.1.6 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
 ```
 
 The official panel address and its server trust anchor are built into this release; no extra panel address is needed. The token is displayed only when created, so copy it then and keep it private. Mining without the panel does not require a token.
@@ -558,7 +558,7 @@ The protected release exposes a read-only JSON API on `127.0.0.1:9200` by defaul
 Change the listener address or port when starting the miner:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -645,7 +645,7 @@ Clock options use physical NVIDIA GPU indices and are applied through NVML. A va
 Multi-GPU example:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -685,13 +685,13 @@ CMP unlock options are available on Linux only. CMP 170HX unlocker v4 supports N
 ### Show release help
 
 ```bash
-./rgminer-1.1.5 --help
+./rgminer-1.1.6 --help
 ```
 
 ### Permission denied
 
 ```bash
-chmod +x rgminer-1.1.5
+chmod +x rgminer-1.1.6
 ```
 
 ### A GPU must not be used
@@ -699,13 +699,13 @@ chmod +x rgminer-1.1.5
 Select only the required CUDA indices:
 
 ```bash
-./rgminer-1.1.5 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### CMP handling must be disabled
 
 ```bash
-./rgminer-1.1.5 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Plain logs are required
@@ -736,7 +736,7 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 
 ## Оглавление
 
-- [Новое в 1.1.5](#ru-whats-new)
+- [Новое в 1.1.6](#ru-whats-new)
 - [Быстрый старт](#ru-quick-start)
 - [Алгоритмы](#ru-algorithms)
 - [Параметры запуска](#ru-cli-options)
@@ -755,7 +755,7 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 
 <a id="ru-whats-new"></a>
 
-## Новое в 1.1.5 <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
+## Новое в 1.1.6 <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
 
 ### Pearl / Pearlhash
 
@@ -805,9 +805,9 @@ When reporting a problem, include the release filename, GPU model, NVIDIA driver
 Сделайте standalone-файл исполняемым и запустите его, указав алгоритм, пул и кошелёк:
 
 ```bash
-chmod +x rgminer-1.1.5
+chmod +x rgminer-1.1.6
 
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -817,7 +817,7 @@ chmod +x rgminer-1.1.5
 Несколько резервных пулов указываются в порядке приоритета через запятую:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST1:PORT1,HOST2:PORT2 \
   --wallet WALLET
@@ -826,7 +826,7 @@ chmod +x rgminer-1.1.5
 Для проверяемого TLS используйте `stratum+tls://` или `--stratum-tls`:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum stratum+tls://HOST:PORT \
   --wallet WALLET
@@ -866,25 +866,25 @@ docker run -d \
 Пример Pearl:
 
 ```bash
-./rgminer-1.1.5 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 Пример Quantus (комиссия 2%):
 
 ```bash
-./rgminer-1.1.5 --algo quantus --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --algo quantus --stratum HOST:PORT --wallet WALLET
 ```
 
 Пример Nockchain (комиссия майнера 2%; комиссия пула [RabbitMiner](https://rabbitminer.cc/) — 2,5%):
 
 ```bash
-./rgminer-1.1.5 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
+./rgminer-1.1.6 --algo nock-zk --proto rabbit --stratum nl2.rabbitminer.cc:1108 --wallet WALLET --worker-name RIG
 ```
 
 Пример NOID (Suprnova, InnovLab или RPlant; комиссия 2%):
 
 ```bash
-./rgminer-1.1.5 --algo noid --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --algo noid --stratum HOST:PORT --wallet WALLET
 ```
 
 ---
@@ -893,7 +893,7 @@ docker run -d \
 
 ## Параметры запуска <sub><a href="#russian-contents">↑ К оглавлению</a></sub>
 
-Ниже описаны параметры запуска `rgminer-1.1.5`.
+Ниже описаны параметры запуска `rgminer-1.1.6`.
 
 ### Подключение к пулу
 
@@ -974,7 +974,7 @@ docker run -d \
 Пример включения API:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -991,7 +991,7 @@ docker run -d \
 Откройте [rgminer.net](https://rgminer.net/) и создайте регистрационный токен в своём аккаунте. Добавьте его к обычной команде запуска:
 
 ```bash
-./rgminer-1.1.5 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
+./rgminer-1.1.6 --algo pearl --stratum HOST:PORT --wallet WALLET --token YOUR_TOKEN
 ```
 
 Адрес официальной панели и ключ проверки сервера уже встроены в этот релиз — указывать отдельный адрес не нужно. Токен показывается только при создании: сразу сохраните его и никому не передавайте. Для майнинга без панели токен не требуется.
@@ -1034,7 +1034,7 @@ docker run -d \
 Адрес и порт можно изменить при запуске:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -1121,7 +1121,7 @@ curl -s http://127.0.0.1:9200/metrics |
 Пример для нескольких GPU:
 
 ```bash
-./rgminer-1.1.5 \
+./rgminer-1.1.6 \
   --algo pearl \
   --stratum HOST:PORT \
   --wallet WALLET \
@@ -1161,13 +1161,13 @@ curl -s http://127.0.0.1:9200/metrics |
 ### Показать справку релиза
 
 ```bash
-./rgminer-1.1.5 --help
+./rgminer-1.1.6 --help
 ```
 
 ### Ошибка Permission denied
 
 ```bash
-chmod +x rgminer-1.1.5
+chmod +x rgminer-1.1.6
 ```
 
 ### Нужно исключить GPU
@@ -1175,13 +1175,13 @@ chmod +x rgminer-1.1.5
 Укажите только необходимые CUDA-индексы:
 
 ```bash
-./rgminer-1.1.5 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --devices 0,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Нужно отключить обработку CMP
 
 ```bash
-./rgminer-1.1.5 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
+./rgminer-1.1.6 --no-cmp-unlock -d 0,1,2 --algo pearl --stratum HOST:PORT --wallet WALLET
 ```
 
 ### Нужен обычный текстовый лог
